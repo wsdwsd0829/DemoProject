@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessDetailHeaderView">
+            <connections>
+                <outlet property="deliveryLabel" destination="hfL-v8-bO5" id="5GW-Az-MCM"/>
+                <outlet property="favoriteButton" destination="CM8-DH-810" id="y7j-Lc-Cku"/>
+                <outlet property="imageView" destination="FkW-Sq-8i9" id="GIe-Y7-GPF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="IEO-R7-gl7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfL-v8-bO5">
+                    <rect key="frame" x="166" y="116" width="42" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="FkW-Sq-8i9">
+                    <rect key="frame" x="71" y="8" width="233" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="m2Z-V4-ZCR"/>
+                        <constraint firstAttribute="width" constant="233" id="seM-d2-BSf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CM8-DH-810">
+                    <rect key="frame" x="118" y="175" width="140" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="CKi-k2-8tg"/>
+                        <constraint firstAttribute="height" constant="30" id="Zek-uu-umI"/>
+                    </constraints>
+                    <state key="normal" title="Add to Favoritesxx"/>
+                    <connections>
+                        <action selector="favoriteClicked:" destination="-1" eventType="touchUpInside" id="NbD-oM-tlc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CM8-DH-810" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4pA-QB-49l"/>
+                <constraint firstItem="CM8-DH-810" firstAttribute="top" secondItem="hfL-v8-bO5" secondAttribute="bottom" constant="8" id="95y-md-AHY"/>
+                <constraint firstItem="hfL-v8-bO5" firstAttribute="top" secondItem="FkW-Sq-8i9" secondAttribute="bottom" constant="8" id="G3e-OT-0e0"/>
+                <constraint firstAttribute="bottom" secondItem="CM8-DH-810" secondAttribute="bottom" constant="16" id="L35-LB-Vsf"/>
+                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="CM8-DH-810" secondAttribute="bottom" constant="20" id="MLI-HN-Wua"/>
+                <constraint firstItem="FkW-Sq-8i9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Th9-xV-287"/>
+                <constraint firstItem="hfL-v8-bO5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hJq-KL-giJ"/>
+                <constraint firstItem="FkW-Sq-8i9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="xdb-nL-8Px"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="-80.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2791534C54130ED1F0ABBF44 /* Pods_DoorDashProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E56887E8AAD6B6A19A40EB /* Pods_DoorDashProjectTests.framework */; };
+		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
+		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
+		506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024361DEFD534005908CF /* DetailViewModelTests.m */; };
+		50FF8F801DEE0A4A00801FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F7F1DEE0A4A00801FEC /* main.m */; };
+		50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F821DEE0A4A00801FEC /* AppDelegate.m */; };
+		50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F851DEE0A4A00801FEC /* ViewController.m */; };
+		50FF8F891DEE0A4A00801FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F871DEE0A4A00801FEC /* Main.storyboard */; };
+		50FF8F8B1DEE0A4A00801FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F8A1DEE0A4A00801FEC /* Assets.xcassets */; };
+		50FF8F8E1DEE0A4A00801FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F8C1DEE0A4A00801FEC /* LaunchScreen.storyboard */; };
+		50FF8F991DEE0A4A00801FEC /* DoorDashProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F981DEE0A4A00801FEC /* DoorDashProjectTests.m */; };
+		50FF8FA41DEE0A4A00801FEC /* DoorDashProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FA31DEE0A4A00801FEC /* DoorDashProjectUITests.m */; };
+		50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FB31DEE0CAF00801FEC /* DDHBusiness.m */; };
+		50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FB61DEE0CBA00801FEC /* DDHAddress.m */; };
+		50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */; };
+		50FF8FC71DEE162300801FEC /* DDHBusinessListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FC61DEE162300801FEC /* DDHBusinessListViewModel.m */; };
+		50FF8FCB1DEE177B00801FEC /* DDHBusinessListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FCA1DEE177B00801FEC /* DDHBusinessListViewController.m */; };
+		50FF8FCF1DEE285600801FEC /* DDHBusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FCE1DEE285600801FEC /* DDHBusinessCell.m */; };
+		50FF8FD21DEE298700801FEC /* DDHBusinessCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FD11DEE298700801FEC /* DDHBusinessCellViewModel.m */; };
+		50FF8FD51DEE2E9500801FEC /* DDHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FD41DEE2E9500801FEC /* DDHMenuItem.m */; };
+		50FF8FDB1DEE30F200801FEC /* DDHBusinessDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FDA1DEE30F200801FEC /* DDHBusinessDetailViewController.m */; };
+		50FF8FDE1DEE314100801FEC /* DDHBusinessDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FDD1DEE314100801FEC /* DDHBusinessDetailViewModel.m */; };
+		50FF8FE41DEE384000801FEC /* BusinessDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FE31DEE384000801FEC /* BusinessDetailHeaderView.m */; };
+		50FF8FE61DEE385200801FEC /* BusinessDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8FE51DEE385200801FEC /* BusinessDetailHeaderView.xib */; };
+		50FF8FE91DEE6E1600801FEC /* DDHMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FE81DEE6E1600801FEC /* DDHMapViewController.m */; };
+		50FF8FEF1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FEE1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m */; };
+		50FF8FF21DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FF11DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m */; };
+		50FF8FF71DEF409500801FEC /* DDHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FF61DEF409500801FEC /* DDHConstants.m */; };
+		50FF8FFB1DEF43DC00801FEC /* DDHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FFA1DEF43DC00801FEC /* DDHTabBarController.m */; };
+		6C54BC292A2A691FC187D8E6 /* Pods_DoorDashProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E7957D55ADA42B367EBA7C /* Pods_DoorDashProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50FF8F951DEE0A4A00801FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50FF8F731DEE0A4900801FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50FF8F7A1DEE0A4A00801FEC;
+			remoteInfo = DoorDashProject;
+		};
+		50FF8FA01DEE0A4A00801FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50FF8F731DEE0A4900801FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50FF8F7A1DEE0A4A00801FEC;
+			remoteInfo = DoorDashProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		152DA5BEDA14448855972181 /* Pods-DoorDashProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorDashProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorDashProjectTests/Pods-DoorDashProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19E7957D55ADA42B367EBA7C /* Pods_DoorDashProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorDashProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E56887E8AAD6B6A19A40EB /* Pods_DoorDashProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorDashProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C66454F24D0218D461396C /* Pods-DoorDashProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorDashProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorDashProject/Pods-DoorDashProject.debug.xcconfig"; sourceTree = "<group>"; };
+		506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHApplicationWideConstants.h; path = Helpers/DDHApplicationWideConstants.h; sourceTree = "<group>"; };
+		506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHApplicationWideConstants.m; path = Helpers/DDHApplicationWideConstants.m; sourceTree = "<group>"; };
+		506024331DEFD096005908CF /* DoorDashProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoorDashProject-PrefixHeader.pch"; sourceTree = "<group>"; };
+		506024341DEFD4BD005908CF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		506024361DEFD534005908CF /* DetailViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewModelTests.m; sourceTree = "<group>"; };
+		50FF8F7B1DEE0A4A00801FEC /* DoorDashProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorDashProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FF8F7F1DEE0A4A00801FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50FF8F811DEE0A4A00801FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50FF8F821DEE0A4A00801FEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50FF8F841DEE0A4A00801FEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50FF8F851DEE0A4A00801FEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50FF8F881DEE0A4A00801FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50FF8F8A1DEE0A4A00801FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FF8F8D1DEE0A4A00801FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50FF8F8F1DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FF8F941DEE0A4A00801FEC /* DoorDashProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorDashProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FF8F981DEE0A4A00801FEC /* DoorDashProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorDashProjectTests.m; sourceTree = "<group>"; };
+		50FF8F9A1DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FF8F9F1DEE0A4A00801FEC /* DoorDashProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorDashProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FF8FA31DEE0A4A00801FEC /* DoorDashProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorDashProjectUITests.m; sourceTree = "<group>"; };
+		50FF8FA51DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FF8FB21DEE0CAF00801FEC /* DDHBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusiness.h; path = Models/DDHBusiness.h; sourceTree = "<group>"; };
+		50FF8FB31DEE0CAF00801FEC /* DDHBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusiness.m; path = Models/DDHBusiness.m; sourceTree = "<group>"; };
+		50FF8FB51DEE0CBA00801FEC /* DDHAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHAddress.h; path = Models/DDHAddress.h; sourceTree = "<group>"; };
+		50FF8FB61DEE0CBA00801FEC /* DDHAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHAddress.m; path = Models/DDHAddress.m; sourceTree = "<group>"; };
+		50FF8FBE1DEE110200801FEC /* DDHNetworkFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHNetworkFetcher.h; path = Managers/NetworkManager/DDHNetworkFetcher.h; sourceTree = "<group>"; };
+		50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHNetworkFetcher.m; path = Managers/NetworkManager/DDHNetworkFetcher.m; sourceTree = "<group>"; };
+		50FF8FC51DEE162300801FEC /* DDHBusinessListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessListViewModel.h; path = ViewModels/DDHBusinessListViewModel.h; sourceTree = "<group>"; };
+		50FF8FC61DEE162300801FEC /* DDHBusinessListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessListViewModel.m; path = ViewModels/DDHBusinessListViewModel.m; sourceTree = "<group>"; };
+		50FF8FC91DEE177B00801FEC /* DDHBusinessListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessListViewController.h; path = ViewControllers/DDHBusinessListViewController.h; sourceTree = "<group>"; };
+		50FF8FCA1DEE177B00801FEC /* DDHBusinessListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessListViewController.m; path = ViewControllers/DDHBusinessListViewController.m; sourceTree = "<group>"; };
+		50FF8FCD1DEE285600801FEC /* DDHBusinessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessCell.h; path = Views/DDHBusinessCell.h; sourceTree = "<group>"; };
+		50FF8FCE1DEE285600801FEC /* DDHBusinessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessCell.m; path = Views/DDHBusinessCell.m; sourceTree = "<group>"; };
+		50FF8FD01DEE298700801FEC /* DDHBusinessCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessCellViewModel.h; path = ViewModels/DDHBusinessCellViewModel.h; sourceTree = "<group>"; };
+		50FF8FD11DEE298700801FEC /* DDHBusinessCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessCellViewModel.m; path = ViewModels/DDHBusinessCellViewModel.m; sourceTree = "<group>"; };
+		50FF8FD31DEE2E9500801FEC /* DDHMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHMenuItem.h; path = Models/DDHMenuItem.h; sourceTree = "<group>"; };
+		50FF8FD41DEE2E9500801FEC /* DDHMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHMenuItem.m; path = Models/DDHMenuItem.m; sourceTree = "<group>"; };
+		50FF8FD91DEE30F200801FEC /* DDHBusinessDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessDetailViewController.h; path = ViewControllers/DDHBusinessDetailViewController.h; sourceTree = "<group>"; };
+		50FF8FDA1DEE30F200801FEC /* DDHBusinessDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessDetailViewController.m; path = ViewControllers/DDHBusinessDetailViewController.m; sourceTree = "<group>"; };
+		50FF8FDC1DEE314100801FEC /* DDHBusinessDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessDetailViewModel.h; path = ViewModels/DDHBusinessDetailViewModel.h; sourceTree = "<group>"; };
+		50FF8FDD1DEE314100801FEC /* DDHBusinessDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessDetailViewModel.m; path = ViewModels/DDHBusinessDetailViewModel.m; sourceTree = "<group>"; };
+		50FF8FE21DEE384000801FEC /* BusinessDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessDetailHeaderView.h; path = Views/BusinessDetailHeaderView.h; sourceTree = "<group>"; };
+		50FF8FE31DEE384000801FEC /* BusinessDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessDetailHeaderView.m; path = Views/BusinessDetailHeaderView.m; sourceTree = "<group>"; };
+		50FF8FE51DEE385200801FEC /* BusinessDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BusinessDetailHeaderView.xib; path = Views/BusinessDetailHeaderView.xib; sourceTree = "<group>"; };
+		50FF8FE71DEE6E1500801FEC /* DDHMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHMapViewController.h; path = ViewControllers/DDHMapViewController.h; sourceTree = "<group>"; };
+		50FF8FE81DEE6E1600801FEC /* DDHMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHMapViewController.m; path = ViewControllers/DDHMapViewController.m; sourceTree = "<group>"; };
+		50FF8FED1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessListFavoritesViewController.h; path = ViewControllers/DDHBusinessListFavoritesViewController.h; sourceTree = "<group>"; };
+		50FF8FEE1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessListFavoritesViewController.m; path = ViewControllers/DDHBusinessListFavoritesViewController.m; sourceTree = "<group>"; };
+		50FF8FF01DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessListFavoritesViewModel.h; path = ViewModels/DDHBusinessListFavoritesViewModel.h; sourceTree = "<group>"; };
+		50FF8FF11DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessListFavoritesViewModel.m; path = ViewModels/DDHBusinessListFavoritesViewModel.m; sourceTree = "<group>"; };
+		50FF8FF41DEF3C4D00801FEC /* DDHBusinessListViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessListViewModelProtocol.h; path = ViewModels/Protocols/DDHBusinessListViewModelProtocol.h; sourceTree = "<group>"; };
+		50FF8FF61DEF409500801FEC /* DDHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHConstants.m; path = Helpers/DDHConstants.m; sourceTree = "<group>"; };
+		50FF8FF81DEF410A00801FEC /* DDHConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DDHConstants.h; path = Helpers/DDHConstants.h; sourceTree = "<group>"; };
+		50FF8FF91DEF43DC00801FEC /* DDHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHTabBarController.h; path = ViewControllers/DDHTabBarController.h; sourceTree = "<group>"; };
+		50FF8FFA1DEF43DC00801FEC /* DDHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHTabBarController.m; path = ViewControllers/DDHTabBarController.m; sourceTree = "<group>"; };
+		8C29D4A208C8C7D35CAB8AF4 /* Pods-DoorDashProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorDashProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorDashProject/Pods-DoorDashProject.release.xcconfig"; sourceTree = "<group>"; };
+		B15FE1D71F99F10AD552CBA2 /* Pods-DoorDashProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorDashProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorDashProjectTests/Pods-DoorDashProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FF8F781DEE0A4A00801FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C54BC292A2A691FC187D8E6 /* Pods_DoorDashProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F911DEE0A4A00801FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2791534C54130ED1F0ABBF44 /* Pods_DoorDashProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F9C1DEE0A4A00801FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30376DC5CFC451CC3DE2B684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47C66454F24D0218D461396C /* Pods-DoorDashProject.debug.xcconfig */,
+				8C29D4A208C8C7D35CAB8AF4 /* Pods-DoorDashProject.release.xcconfig */,
+				152DA5BEDA14448855972181 /* Pods-DoorDashProjectTests.debug.xcconfig */,
+				B15FE1D71F99F10AD552CBA2 /* Pods-DoorDashProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50FF8F721DEE0A4900801FEC = {
+			isa = PBXGroup;
+			children = (
+				50FF8F7D1DEE0A4A00801FEC /* DoorDashProject */,
+				50FF8F971DEE0A4A00801FEC /* DoorDashProjectTests */,
+				50FF8FA21DEE0A4A00801FEC /* DoorDashProjectUITests */,
+				50FF8F7C1DEE0A4A00801FEC /* Products */,
+				30376DC5CFC451CC3DE2B684 /* Pods */,
+				AE17345F0F6849D30BC259AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50FF8F7C1DEE0A4A00801FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8F7B1DEE0A4A00801FEC /* DoorDashProject.app */,
+				50FF8F941DEE0A4A00801FEC /* DoorDashProjectTests.xctest */,
+				50FF8F9F1DEE0A4A00801FEC /* DoorDashProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FF8F7D1DEE0A4A00801FEC /* DoorDashProject */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FF51DEF408200801FEC /* Helpers */,
+				50FF8FCC1DEE283700801FEC /* Views */,
+				50FF8FC81DEE175000801FEC /* ViewControllers */,
+				50FF8FC11DEE15EB00801FEC /* ViewModels */,
+				50FF8FB81DEE0FF800801FEC /* Managers */,
+				50FF8FB11DEE0C7700801FEC /* Models */,
+				50FF8F811DEE0A4A00801FEC /* AppDelegate.h */,
+				50FF8F821DEE0A4A00801FEC /* AppDelegate.m */,
+				50FF8F841DEE0A4A00801FEC /* ViewController.h */,
+				50FF8F851DEE0A4A00801FEC /* ViewController.m */,
+				50FF8F871DEE0A4A00801FEC /* Main.storyboard */,
+				50FF8F8A1DEE0A4A00801FEC /* Assets.xcassets */,
+				50FF8F8C1DEE0A4A00801FEC /* LaunchScreen.storyboard */,
+				50FF8F8F1DEE0A4A00801FEC /* Info.plist */,
+				50FF8F7E1DEE0A4A00801FEC /* Supporting Files */,
+				506024331DEFD096005908CF /* DoorDashProject-PrefixHeader.pch */,
+				506024341DEFD4BD005908CF /* Localizable.strings */,
+			);
+			path = DoorDashProject;
+			sourceTree = "<group>";
+		};
+		50FF8F7E1DEE0A4A00801FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8F7F1DEE0A4A00801FEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50FF8F971DEE0A4A00801FEC /* DoorDashProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8F981DEE0A4A00801FEC /* DoorDashProjectTests.m */,
+				50FF8F9A1DEE0A4A00801FEC /* Info.plist */,
+				506024361DEFD534005908CF /* DetailViewModelTests.m */,
+			);
+			path = DoorDashProjectTests;
+			sourceTree = "<group>";
+		};
+		50FF8FA21DEE0A4A00801FEC /* DoorDashProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FA31DEE0A4A00801FEC /* DoorDashProjectUITests.m */,
+				50FF8FA51DEE0A4A00801FEC /* Info.plist */,
+			);
+			path = DoorDashProjectUITests;
+			sourceTree = "<group>";
+		};
+		50FF8FB11DEE0C7700801FEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FB21DEE0CAF00801FEC /* DDHBusiness.h */,
+				50FF8FB31DEE0CAF00801FEC /* DDHBusiness.m */,
+				50FF8FB51DEE0CBA00801FEC /* DDHAddress.h */,
+				50FF8FB61DEE0CBA00801FEC /* DDHAddress.m */,
+				50FF8FD31DEE2E9500801FEC /* DDHMenuItem.h */,
+				50FF8FD41DEE2E9500801FEC /* DDHMenuItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		50FF8FB81DEE0FF800801FEC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FBA1DEE101200801FEC /* PersistenceManager */,
+				50FF8FB91DEE100200801FEC /* NetworkManager */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		50FF8FB91DEE100200801FEC /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FBE1DEE110200801FEC /* DDHNetworkFetcher.h */,
+				50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		50FF8FBA1DEE101200801FEC /* PersistenceManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PersistenceManager;
+			sourceTree = "<group>";
+		};
+		50FF8FC11DEE15EB00801FEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FF31DEF3C2600801FEC /* Protocols */,
+				50FF8FC51DEE162300801FEC /* DDHBusinessListViewModel.h */,
+				50FF8FC61DEE162300801FEC /* DDHBusinessListViewModel.m */,
+				50FF8FD01DEE298700801FEC /* DDHBusinessCellViewModel.h */,
+				50FF8FD11DEE298700801FEC /* DDHBusinessCellViewModel.m */,
+				50FF8FDC1DEE314100801FEC /* DDHBusinessDetailViewModel.h */,
+				50FF8FDD1DEE314100801FEC /* DDHBusinessDetailViewModel.m */,
+				50FF8FF01DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.h */,
+				50FF8FF11DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		50FF8FC81DEE175000801FEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FC91DEE177B00801FEC /* DDHBusinessListViewController.h */,
+				50FF8FCA1DEE177B00801FEC /* DDHBusinessListViewController.m */,
+				50FF8FD91DEE30F200801FEC /* DDHBusinessDetailViewController.h */,
+				50FF8FDA1DEE30F200801FEC /* DDHBusinessDetailViewController.m */,
+				50FF8FE71DEE6E1500801FEC /* DDHMapViewController.h */,
+				50FF8FE81DEE6E1600801FEC /* DDHMapViewController.m */,
+				50FF8FED1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.h */,
+				50FF8FEE1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m */,
+				50FF8FF91DEF43DC00801FEC /* DDHTabBarController.h */,
+				50FF8FFA1DEF43DC00801FEC /* DDHTabBarController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		50FF8FCC1DEE283700801FEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FCD1DEE285600801FEC /* DDHBusinessCell.h */,
+				50FF8FCE1DEE285600801FEC /* DDHBusinessCell.m */,
+				50FF8FE21DEE384000801FEC /* BusinessDetailHeaderView.h */,
+				50FF8FE31DEE384000801FEC /* BusinessDetailHeaderView.m */,
+				50FF8FE51DEE385200801FEC /* BusinessDetailHeaderView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		50FF8FF31DEF3C2600801FEC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FF41DEF3C4D00801FEC /* DDHBusinessListViewModelProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		50FF8FF51DEF408200801FEC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FF61DEF409500801FEC /* DDHConstants.m */,
+				50FF8FF81DEF410A00801FEC /* DDHConstants.h */,
+				506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */,
+				506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AE17345F0F6849D30BC259AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19E7957D55ADA42B367EBA7C /* Pods_DoorDashProject.framework */,
+				43E56887E8AAD6B6A19A40EB /* Pods_DoorDashProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FF8F7A1DEE0A4A00801FEC /* DoorDashProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FF8FA81DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProject" */;
+			buildPhases = (
+				F2B66099EF5C2F69059E9A67 /* [CP] Check Pods Manifest.lock */,
+				50FF8F771DEE0A4A00801FEC /* Sources */,
+				50FF8F781DEE0A4A00801FEC /* Frameworks */,
+				50FF8F791DEE0A4A00801FEC /* Resources */,
+				CDA61C6B3137A808D5F40CD6 /* [CP] Embed Pods Frameworks */,
+				16DE5E0EA8FA7AABC851889C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoorDashProject;
+			productName = DoorDashProject;
+			productReference = 50FF8F7B1DEE0A4A00801FEC /* DoorDashProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50FF8F931DEE0A4A00801FEC /* DoorDashProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FF8FAB1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProjectTests" */;
+			buildPhases = (
+				EEB14D32A762B46B6FD5AECC /* [CP] Check Pods Manifest.lock */,
+				50FF8F901DEE0A4A00801FEC /* Sources */,
+				50FF8F911DEE0A4A00801FEC /* Frameworks */,
+				50FF8F921DEE0A4A00801FEC /* Resources */,
+				52A5EBBDD0193A8B29303F01 /* [CP] Embed Pods Frameworks */,
+				B605B78EF2B0EFC5F693BA16 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FF8F961DEE0A4A00801FEC /* PBXTargetDependency */,
+			);
+			name = DoorDashProjectTests;
+			productName = DoorDashProjectTests;
+			productReference = 50FF8F941DEE0A4A00801FEC /* DoorDashProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50FF8F9E1DEE0A4A00801FEC /* DoorDashProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FF8FAE1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProjectUITests" */;
+			buildPhases = (
+				50FF8F9B1DEE0A4A00801FEC /* Sources */,
+				50FF8F9C1DEE0A4A00801FEC /* Frameworks */,
+				50FF8F9D1DEE0A4A00801FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FF8FA11DEE0A4A00801FEC /* PBXTargetDependency */,
+			);
+			name = DoorDashProjectUITests;
+			productName = DoorDashProjectUITests;
+			productReference = 50FF8F9F1DEE0A4A00801FEC /* DoorDashProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FF8F731DEE0A4900801FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MAX;
+				TargetAttributes = {
+					50FF8F7A1DEE0A4A00801FEC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9MKJC68VMT;
+						ProvisioningStyle = Automatic;
+					};
+					50FF8F931DEE0A4A00801FEC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9MKJC68VMT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50FF8F7A1DEE0A4A00801FEC;
+					};
+					50FF8F9E1DEE0A4A00801FEC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9MKJC68VMT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50FF8F7A1DEE0A4A00801FEC;
+					};
+				};
+			};
+			buildConfigurationList = 50FF8F761DEE0A4A00801FEC /* Build configuration list for PBXProject "DoorDashProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50FF8F721DEE0A4900801FEC;
+			productRefGroup = 50FF8F7C1DEE0A4A00801FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FF8F7A1DEE0A4A00801FEC /* DoorDashProject */,
+				50FF8F931DEE0A4A00801FEC /* DoorDashProjectTests */,
+				50FF8F9E1DEE0A4A00801FEC /* DoorDashProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FF8F791DEE0A4A00801FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506024351DEFD4BD005908CF /* Localizable.strings in Resources */,
+				50FF8FE61DEE385200801FEC /* BusinessDetailHeaderView.xib in Resources */,
+				50FF8F8E1DEE0A4A00801FEC /* LaunchScreen.storyboard in Resources */,
+				50FF8F8B1DEE0A4A00801FEC /* Assets.xcassets in Resources */,
+				50FF8F891DEE0A4A00801FEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F921DEE0A4A00801FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F9D1DEE0A4A00801FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16DE5E0EA8FA7AABC851889C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorDashProject/Pods-DoorDashProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A5EBBDD0193A8B29303F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorDashProjectTests/Pods-DoorDashProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B605B78EF2B0EFC5F693BA16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorDashProjectTests/Pods-DoorDashProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA61C6B3137A808D5F40CD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorDashProject/Pods-DoorDashProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB14D32A762B46B6FD5AECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B66099EF5C2F69059E9A67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FF8F771DEE0A4A00801FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FF8FF71DEF409500801FEC /* DDHConstants.m in Sources */,
+				50FF8FC71DEE162300801FEC /* DDHBusinessListViewModel.m in Sources */,
+				50FF8FD21DEE298700801FEC /* DDHBusinessCellViewModel.m in Sources */,
+				50FF8FE91DEE6E1600801FEC /* DDHMapViewController.m in Sources */,
+				50FF8FCB1DEE177B00801FEC /* DDHBusinessListViewController.m in Sources */,
+				50FF8FEF1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m in Sources */,
+				50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */,
+				50FF8FE41DEE384000801FEC /* BusinessDetailHeaderView.m in Sources */,
+				50FF8FDE1DEE314100801FEC /* DDHBusinessDetailViewModel.m in Sources */,
+				50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */,
+				50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */,
+				506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */,
+				50FF8FFB1DEF43DC00801FEC /* DDHTabBarController.m in Sources */,
+				50FF8FCF1DEE285600801FEC /* DDHBusinessCell.m in Sources */,
+				50FF8FF21DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m in Sources */,
+				50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */,
+				50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */,
+				50FF8FD51DEE2E9500801FEC /* DDHMenuItem.m in Sources */,
+				50FF8FDB1DEE30F200801FEC /* DDHBusinessDetailViewController.m in Sources */,
+				50FF8F801DEE0A4A00801FEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F901DEE0A4A00801FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */,
+				50FF8F991DEE0A4A00801FEC /* DoorDashProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FF8F9B1DEE0A4A00801FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FF8FA41DEE0A4A00801FEC /* DoorDashProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50FF8F961DEE0A4A00801FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50FF8F7A1DEE0A4A00801FEC /* DoorDashProject */;
+			targetProxy = 50FF8F951DEE0A4A00801FEC /* PBXContainerItemProxy */;
+		};
+		50FF8FA11DEE0A4A00801FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50FF8F7A1DEE0A4A00801FEC /* DoorDashProject */;
+			targetProxy = 50FF8FA01DEE0A4A00801FEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50FF8F871DEE0A4A00801FEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FF8F881DEE0A4A00801FEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50FF8F8C1DEE0A4A00801FEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FF8F8D1DEE0A4A00801FEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50FF8FA61DEE0A4A00801FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50FF8FA71DEE0A4A00801FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50FF8FA91DEE0A4A00801FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C66454F24D0218D461396C /* Pods-DoorDashProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoorDashProject/DoorDashProject-PrefixHeader.pch";
+				INFOPLIST_FILE = DoorDashProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50FF8FAA1DEE0A4A00801FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C29D4A208C8C7D35CAB8AF4 /* Pods-DoorDashProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoorDashProject/DoorDashProject-PrefixHeader.pch";
+				INFOPLIST_FILE = DoorDashProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50FF8FAC1DEE0A4A00801FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152DA5BEDA14448855972181 /* Pods-DoorDashProjectTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DoorDashProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorDashProject.app/DoorDashProject";
+			};
+			name = Debug;
+		};
+		50FF8FAD1DEE0A4A00801FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15FE1D71F99F10AD552CBA2 /* Pods-DoorDashProjectTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DoorDashProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorDashProject.app/DoorDashProject";
+			};
+			name = Release;
+		};
+		50FF8FAF1DEE0A4A00801FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DoorDashProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoorDashProject;
+			};
+			name = Debug;
+		};
+		50FF8FB01DEE0A4A00801FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DoorDashProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DoorDashProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoorDashProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FF8F761DEE0A4A00801FEC /* Build configuration list for PBXProject "DoorDashProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FF8FA61DEE0A4A00801FEC /* Debug */,
+				50FF8FA71DEE0A4A00801FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FF8FA81DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FF8FA91DEE0A4A00801FEC /* Debug */,
+				50FF8FAA1DEE0A4A00801FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FF8FAB1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FF8FAC1DEE0A4A00801FEC /* Debug */,
+				50FF8FAD1DEE0A4A00801FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FF8FAE1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DoorDashProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FF8FAF1DEE0A4A00801FEC /* Debug */,
+				50FF8FB01DEE0A4A00801FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FF8F731DEE0A4900801FEC /* Project object */;
+}
