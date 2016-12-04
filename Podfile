@@ -8,10 +8,10 @@ def shared_pods
     pod 'AFNetworking', '~> 3.0'
 end
 
-target 'DoorDashProject' do
+target 'DemoProject' do
     shared_pods
 end
 
-target 'DoorDashProjectTests' do
+target 'DemoProjectTests' do
     shared_pods
 end
