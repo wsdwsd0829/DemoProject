@@ -71,6 +71,9 @@
 //MARK: tableView Delegate
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if(searchController.active && ![searchController.searchBar.text isEqualToString: @""]) {
+        return filteredBusinesses.count;
+    }
     return businesses.count;
 }
 
@@ -83,9 +86,14 @@
 }
 -(void) p_configCell: (UITableViewCell*) cell forIndexPath:(NSIndexPath*) indexPath {
     if ([cell isKindOfClass:[DDHBusinessCell class] ]) {
-        
         DDHBusinessCell* businessCell = (DDHBusinessCell*)cell;
-        businessCell.viewModel = [[DDHBusinessCellViewModel alloc] initWithBusiness: businesses[indexPath.row]];
+        DDHBusiness* bus;
+        if(searchController.active && ![searchController.searchBar.text isEqualToString: @""]) {
+            bus = filteredBusinesses[indexPath.row];
+        } else {
+            bus = businesses[indexPath.row];
+        }
+        businessCell.viewModel = [[DDHBusinessCellViewModel alloc] initWithBusiness: bus];
         [businessCell updateUI];
     }
 }

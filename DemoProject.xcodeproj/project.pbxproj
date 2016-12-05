@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5002D4501DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */; };
+		5002D4531DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */; };
 		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
 		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
 		50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */; };
@@ -61,6 +62,8 @@
 		4E028DEDD9E136C17B592EA6 /* Pods-DemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5002D44E1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHNetworkFetcherFactory.h; path = Managers/NetworkManager/DDHNetworkFetcherFactory.h; sourceTree = "<group>"; };
 		5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHNetworkFetcherFactory.m; path = Managers/NetworkManager/DDHNetworkFetcherFactory.m; sourceTree = "<group>"; };
+		5002D4511DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DDHBusinessListViewController+LocalSearch.h"; path = "ViewControllers/DDHBusinessListViewController+LocalSearch.h"; sourceTree = "<group>"; };
+		5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DDHBusinessListViewController+LocalSearch.m"; path = "ViewControllers/DDHBusinessListViewController+LocalSearch.m"; sourceTree = "<group>"; };
 		506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHApplicationWideConstants.h; path = Helpers/DDHApplicationWideConstants.h; sourceTree = "<group>"; };
 		506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHApplicationWideConstants.m; path = Helpers/DDHApplicationWideConstants.m; sourceTree = "<group>"; };
 		506024331DEFD096005908CF /* DemoProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -161,6 +164,17 @@
 				42FBA4332F99C5A559E5AA2B /* Pods-DemoProjectTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5002D4541DF52C79009C9FE9 /* ListBusinessVC */ = {
+			isa = PBXGroup;
+			children = (
+				50FF8FC91DEE177B00801FEC /* DDHBusinessListViewController.h */,
+				50FF8FCA1DEE177B00801FEC /* DDHBusinessListViewController.m */,
+				5002D4511DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.h */,
+				5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */,
+			);
+			name = ListBusinessVC;
 			sourceTree = "<group>";
 		};
 		50B9A8E21DF4D209002E5A03 /* PermissionManager */ = {
@@ -344,8 +358,7 @@
 		50FF8FC81DEE175000801FEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				50FF8FC91DEE177B00801FEC /* DDHBusinessListViewController.h */,
-				50FF8FCA1DEE177B00801FEC /* DDHBusinessListViewController.m */,
+				5002D4541DF52C79009C9FE9 /* ListBusinessVC */,
 				50FF8FD91DEE30F200801FEC /* DDHBusinessDetailViewController.h */,
 				50FF8FDA1DEE30F200801FEC /* DDHBusinessDetailViewController.m */,
 				50FF8FE71DEE6E1500801FEC /* DDHMapViewController.h */,
@@ -581,6 +594,7 @@
 				50FF8FDE1DEE314100801FEC /* DDHBusinessDetailViewModel.m in Sources */,
 				50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */,
 				50B9A8FA1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */,
+				5002D4531DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m in Sources */,
 				50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */,
 				50B9A8F11DF4E15C002E5A03 /* Utils.m in Sources */,
 				506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */,

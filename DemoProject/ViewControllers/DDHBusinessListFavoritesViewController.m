@@ -18,11 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [viewModel loadBusinesses:^(NSArray *buses) {
+        //things used in subclass need to declared in .h
         businesses = buses;
         [self.tableView reloadData];
     }];

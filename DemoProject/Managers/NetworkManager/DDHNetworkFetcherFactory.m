@@ -11,6 +11,7 @@
 #import "DDHNetworkFetcher.h"
 @implementation DDHNetworkFetcherFactory
 +(id<DDHNetworkFetcherProtocol>) createNetworkFetcher {
-    return [DDHGooglePlaceNetworkFetcher new];
+    //return [DDHGooglePlaceNetworkFetcher new];
+    return [DDHNetworkFetcher new];
 }
 @end

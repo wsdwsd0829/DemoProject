@@ -111,6 +111,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="nav-search" id="yBs-Dg-gIp">
                             <color key="tintColor" red="1" green="0.26021137459999999" blue="0.32664820169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="searchBarButtonClicked:" destination="mSy-dc-xoN" id="XmY-3b-Lyf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -386,6 +389,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="nav-search" id="x3W-Ux-Irh">
                             <color key="tintColor" red="1" green="0.26021137459999999" blue="0.32664820169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="searchBarButtonClicked:" destination="8ql-oG-olc" id="n0Q-0Y-tLx"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

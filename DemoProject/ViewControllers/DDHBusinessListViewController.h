@@ -12,6 +12,8 @@
 @interface DDHBusinessListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
     id<DDHBusinessListViewModelProtocol> viewModel;
     NSArray* businesses;
+    NSArray* filteredBusinesses;
+    UISearchController* searchController;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
