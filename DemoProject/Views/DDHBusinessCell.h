@@ -14,6 +14,7 @@ static NSString* kBusinessCellIdentifier = @"DDHBusinessCell";
 @interface DDHBusinessCell : UITableViewCell
 
 @property (nonatomic) DDHBusinessCellViewModel* viewModel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 -(void)updateUI;
 

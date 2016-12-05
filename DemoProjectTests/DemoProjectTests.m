@@ -1,18 +1,18 @@
 //
-//  DoorDashProjectTests.m
-//  DoorDashProjectTests
+//  DemoProjectTests.m
+//  DemoProjectTests
 //
-//  Created by MAX on 11/29/16.
+//  Created by MAX on 12/4/16.
 //  Copyright © 2016 MAX. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface DoorDashProjectTests : XCTestCase
+@interface DemoProjectTests : XCTestCase
 
 @end
 
-@implementation DoorDashProjectTests
+@implementation DemoProjectTests
 
 - (void)setUp {
     [super setUp];

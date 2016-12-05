@@ -1,8 +1,8 @@
 //
-//  ListViewModelTests.m
-//  DoorDashProject
+//  Tests.m
+//  DemoProject
 //
-//  Created by MAX on 11/30/16.
+//  Created by MAX on 12/4/16.
 //  Copyright © 2016 MAX. All rights reserved.
 //
 
@@ -10,16 +10,16 @@
 #import "DDHBusinessDetailViewModel.h"
 #import "DDHBusiness.h"
 
-
-//Since all business related logic resides in viewmodel, we only test viewmodel here
-@interface DetailViewModelTests : XCTestCase {
+@interface Tests : XCTestCase {
     DDHBusinessDetailViewModel * detailViewModel;
     DDHBusiness* business;
 }
 
+
 @end
 
-@implementation DetailViewModelTests
+@implementation Tests
+
 - (void)setUp {
     [super setUp];
     business = [[DDHBusiness alloc] initWithName: @"MockBusiness" withIdentifier: @"1"];
@@ -40,7 +40,7 @@
     [business setDeliverTime:40];
     NSString* deliverPriceAndTime = [detailViewModel deliverPriceAndTime];
     XCTAssertTrue([deliverPriceAndTime isEqualToString:@"$5.99 delivery in 40 min"]);
-
+    
     [business setDeliverPrice:0];
     NSString* deliverPriceAndTime2 = [detailViewModel deliverPriceAndTime];
     XCTAssertTrue([deliverPriceAndTime2 isEqualToString:@"Free delivery in 40 min"]);
@@ -57,6 +57,4 @@
     XCTAssertTrue([title2 isEqualToString:@"Add to Favorites"]);
     XCTAssertTrue(business.favorite == NO);
 }
-
-
 @end

@@ -7,8 +7,7 @@
 //
 
 #import "DDHBusinessListViewModel.h"
-#import "DDHNetworkFetcher.h"
-#import "DDHGooglePlaceNetworkFetcher.h"
+#import "DDHNetworkFetcherFactory.h"
 
 @interface DDHBusinessListViewModel ()
 //@property (nonatomic) DDHNetworkFetcher* fetcher;
@@ -25,11 +24,10 @@
 }
 
 -(id<DDHNetworkFetcherProtocol>)p_createFetcher {
-    return [DDHGooglePlaceNetworkFetcher new];
+    return [DDHNetworkFetcherFactory createNetworkFetcher];
 }
 
 //TODO: set addrss & params, that trigger fetch google
-
 /// load businesses using DDHNetworkFetcher
 -(void) loadBusinesses: (void(^)(NSArray*)) handler {
     [fetcher fetchBusinesses:^(NSArray * results) {

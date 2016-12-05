@@ -37,8 +37,8 @@
     //setup tableView
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.estimatedRowHeight = 80.0f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 200.0f;
     
     //setup view model
     [self p_setupViewModel];
@@ -77,10 +77,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier: kBusinessCellIdentifier forIndexPath: indexPath];
     [self p_configCell:cell forIndexPath:indexPath];
+    
+    
     return cell;
 }
 -(void) p_configCell: (UITableViewCell*) cell forIndexPath:(NSIndexPath*) indexPath {
     if ([cell isKindOfClass:[DDHBusinessCell class] ]) {
+        
         DDHBusinessCell* businessCell = (DDHBusinessCell*)cell;
         businessCell.viewModel = [[DDHBusinessCellViewModel alloc] initWithBusiness: businesses[indexPath.row]];
         [businessCell updateUI];

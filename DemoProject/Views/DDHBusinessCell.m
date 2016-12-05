@@ -12,7 +12,7 @@
 
 //cell outlets
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *typeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deliveryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *deliverTimeLabel;
@@ -31,8 +31,8 @@
     self.typeLabel.text = self.viewModel.type;
     self.deliveryLabel.text = self.viewModel.delivery;
     self.deliverTimeLabel.text = self.viewModel.deliverTime;
-    //self.iconView.image =
     [self.iconView sd_setImageWithURL:[NSURL URLWithString: [self.viewModel iconURL]] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    self.iconView.clipsToBounds = YES;
 }
 
 

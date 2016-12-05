@@ -7,26 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		345820726B19907DB43EAA44 /* Pods_DemoProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0983A140A415E87B721FA4 /* Pods_DemoProjectTests.framework */; };
+		5002D4501DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */; };
 		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
 		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
-		506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024361DEFD534005908CF /* DetailViewModelTests.m */; };
 		50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */; };
 		50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E41DF4D232002E5A03 /* DDHPermissionManager.m */; };
 		50B9A8E91DF4D30D002E5A03 /* CLLocationManager+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E81DF4D30D002E5A03 /* CLLocationManager+Permission.m */; };
 		50B9A8EE1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8ED1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m */; };
 		50B9A8F11DF4E15C002E5A03 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F01DF4E15C002E5A03 /* Utils.m */; };
-		50B9A8F21DF4E15C002E5A03 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F01DF4E15C002E5A03 /* Utils.m */; };
 		50B9A8FA1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */; };
-		50B9A8FB1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */; };
+		50B9A9051DF500F6002E5A03 /* DemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A9041DF500F6002E5A03 /* DemoProjectTests.m */; };
+		50B9A90D1DF5012C002E5A03 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A90C1DF5012C002E5A03 /* Tests.m */; };
 		50FF8F801DEE0A4A00801FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F7F1DEE0A4A00801FEC /* main.m */; };
 		50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F821DEE0A4A00801FEC /* AppDelegate.m */; };
 		50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F851DEE0A4A00801FEC /* ViewController.m */; };
 		50FF8F891DEE0A4A00801FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F871DEE0A4A00801FEC /* Main.storyboard */; };
 		50FF8F8B1DEE0A4A00801FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F8A1DEE0A4A00801FEC /* Assets.xcassets */; };
 		50FF8F8E1DEE0A4A00801FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FF8F8C1DEE0A4A00801FEC /* LaunchScreen.storyboard */; };
-		50FF8F991DEE0A4A00801FEC /* DemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F981DEE0A4A00801FEC /* DemoProjectTests.m */; };
-		50FF8FA41DEE0A4A00801FEC /* DemoProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FA31DEE0A4A00801FEC /* DemoProjectUITests.m */; };
 		50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FB31DEE0CAF00801FEC /* DDHBusiness.m */; };
 		50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FB61DEE0CBA00801FEC /* DDHAddress.m */; };
 		50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */; };
@@ -48,14 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50FF8F951DEE0A4A00801FEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50FF8F731DEE0A4900801FEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50FF8F7A1DEE0A4A00801FEC;
-			remoteInfo = DemoProject;
-		};
-		50FF8FA01DEE0A4A00801FEC /* PBXContainerItemProxy */ = {
+		50B9A9071DF500F6002E5A03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50FF8F731DEE0A4900801FEC /* Project object */;
 			proxyType = 1;
@@ -69,11 +59,12 @@
 		42FBA4332F99C5A559E5AA2B /* Pods-DemoProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoProjectTests/Pods-DemoProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B0983A140A415E87B721FA4 /* Pods_DemoProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E028DEDD9E136C17B592EA6 /* Pods-DemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		5002D44E1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHNetworkFetcherFactory.h; path = Managers/NetworkManager/DDHNetworkFetcherFactory.h; sourceTree = "<group>"; };
+		5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHNetworkFetcherFactory.m; path = Managers/NetworkManager/DDHNetworkFetcherFactory.m; sourceTree = "<group>"; };
 		506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHApplicationWideConstants.h; path = Helpers/DDHApplicationWideConstants.h; sourceTree = "<group>"; };
 		506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHApplicationWideConstants.m; path = Helpers/DDHApplicationWideConstants.m; sourceTree = "<group>"; };
 		506024331DEFD096005908CF /* DemoProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-PrefixHeader.pch"; sourceTree = "<group>"; };
 		506024341DEFD4BD005908CF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		506024361DEFD534005908CF /* DetailViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewModelTests.m; sourceTree = "<group>"; };
 		50B9A8DF1DF4D198002E5A03 /* DDHSecrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSecrets.h; path = Helpers/DDHSecrets.h; sourceTree = "<group>"; };
 		50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSecrets.m; path = Helpers/DDHSecrets.m; sourceTree = "<group>"; };
 		50B9A8E31DF4D232002E5A03 /* DDHPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHPermissionManager.h; path = Managers/PermissionManager/DDHPermissionManager.h; sourceTree = "<group>"; };
@@ -87,6 +78,10 @@
 		50B9A8F01DF4E15C002E5A03 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Helpers/Utils.m; sourceTree = "<group>"; };
 		50B9A8F81DF4E9A7002E5A03 /* DDHGooglePlaceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGooglePlaceParser.h; path = Parsers/DDHGooglePlaceParser.h; sourceTree = "<group>"; };
 		50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGooglePlaceParser.m; path = Parsers/DDHGooglePlaceParser.m; sourceTree = "<group>"; };
+		50B9A9021DF500F6002E5A03 /* DemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B9A9041DF500F6002E5A03 /* DemoProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoProjectTests.m; sourceTree = "<group>"; };
+		50B9A9061DF500F6002E5A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B9A90C1DF5012C002E5A03 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		50FF8F7B1DEE0A4A00801FEC /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FF8F7F1DEE0A4A00801FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50FF8F811DEE0A4A00801FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,10 +92,7 @@
 		50FF8F8A1DEE0A4A00801FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50FF8F8D1DEE0A4A00801FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50FF8F8F1DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50FF8F941DEE0A4A00801FEC /* DemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50FF8F981DEE0A4A00801FEC /* DemoProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoProjectTests.m; sourceTree = "<group>"; };
 		50FF8F9A1DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50FF8F9F1DEE0A4A00801FEC /* DemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FF8FA31DEE0A4A00801FEC /* DemoProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoProjectUITests.m; sourceTree = "<group>"; };
 		50FF8FA51DEE0A4A00801FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50FF8FB21DEE0CAF00801FEC /* DDHBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusiness.h; path = Models/DDHBusiness.h; sourceTree = "<group>"; };
@@ -142,26 +134,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		50B9A8FF1DF500F6002E5A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50FF8F781DEE0A4A00801FEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				897109C3770A19011BDBA880 /* Pods_DemoProject.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50FF8F911DEE0A4A00801FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				345820726B19907DB43EAA44 /* Pods_DemoProjectTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50FF8F9C1DEE0A4A00801FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,12 +198,22 @@
 			name = Parsers;
 			sourceTree = "<group>";
 		};
+		50B9A9031DF500F6002E5A03 /* DemoProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A9041DF500F6002E5A03 /* DemoProjectTests.m */,
+				50B9A9061DF500F6002E5A03 /* Info.plist */,
+			);
+			path = DemoProjectTests;
+			sourceTree = "<group>";
+		};
 		50FF8F721DEE0A4900801FEC = {
 			isa = PBXGroup;
 			children = (
 				50FF8F7D1DEE0A4A00801FEC /* DemoProject */,
 				50FF8F971DEE0A4A00801FEC /* DemoProjectTests */,
 				50FF8FA21DEE0A4A00801FEC /* DemoProjectUITests */,
+				50B9A9031DF500F6002E5A03 /* DemoProjectTests */,
 				50FF8F7C1DEE0A4A00801FEC /* Products */,
 				30376DC5CFC451CC3DE2B684 /* Pods */,
 				AE17345F0F6849D30BC259AA /* Frameworks */,
@@ -230,8 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				50FF8F7B1DEE0A4A00801FEC /* DemoProject.app */,
-				50FF8F941DEE0A4A00801FEC /* DemoProjectTests.xctest */,
-				50FF8F9F1DEE0A4A00801FEC /* DemoProjectUITests.xctest */,
+				50B9A9021DF500F6002E5A03 /* DemoProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,11 +265,10 @@
 		50FF8F971DEE0A4A00801FEC /* DemoProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				50FF8F981DEE0A4A00801FEC /* DemoProjectTests.m */,
 				50FF8F9A1DEE0A4A00801FEC /* Info.plist */,
-				506024361DEFD534005908CF /* DetailViewModelTests.m */,
+				50B9A90C1DF5012C002E5A03 /* Tests.m */,
 			);
-			name = DemoProjectTests;
+			path = DemoProjectTests;
 			sourceTree = "<group>";
 		};
 		50FF8FA21DEE0A4A00801FEC /* DemoProjectUITests */ = {
@@ -320,6 +312,8 @@
 				50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */,
 				50B9A8EC1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.h */,
 				50B9A8ED1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m */,
+				5002D44E1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.h */,
+				5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
@@ -411,6 +405,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		50B9A9011DF500F6002E5A03 /* DemoProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B9A9091DF500F6002E5A03 /* Build configuration list for PBXNativeTarget "DemoProjectTests" */;
+			buildPhases = (
+				50B9A8FE1DF500F6002E5A03 /* Sources */,
+				50B9A8FF1DF500F6002E5A03 /* Frameworks */,
+				50B9A9001DF500F6002E5A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B9A9081DF500F6002E5A03 /* PBXTargetDependency */,
+			);
+			name = DemoProjectTests;
+			productName = DemoProjectTests;
+			productReference = 50B9A9021DF500F6002E5A03 /* DemoProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		50FF8F7A1DEE0A4A00801FEC /* DemoProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50FF8FA81DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DemoProject" */;
@@ -431,45 +443,6 @@
 			productReference = 50FF8F7B1DEE0A4A00801FEC /* DemoProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		50FF8F931DEE0A4A00801FEC /* DemoProjectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50FF8FAB1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DemoProjectTests" */;
-			buildPhases = (
-				EEB14D32A762B46B6FD5AECC /* [CP] Check Pods Manifest.lock */,
-				50FF8F901DEE0A4A00801FEC /* Sources */,
-				50FF8F911DEE0A4A00801FEC /* Frameworks */,
-				50FF8F921DEE0A4A00801FEC /* Resources */,
-				52A5EBBDD0193A8B29303F01 /* [CP] Embed Pods Frameworks */,
-				B605B78EF2B0EFC5F693BA16 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50FF8F961DEE0A4A00801FEC /* PBXTargetDependency */,
-			);
-			name = DemoProjectTests;
-			productName = DemoProjectTests;
-			productReference = 50FF8F941DEE0A4A00801FEC /* DemoProjectTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		50FF8F9E1DEE0A4A00801FEC /* DemoProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50FF8FAE1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DemoProjectUITests" */;
-			buildPhases = (
-				50FF8F9B1DEE0A4A00801FEC /* Sources */,
-				50FF8F9C1DEE0A4A00801FEC /* Frameworks */,
-				50FF8F9D1DEE0A4A00801FEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50FF8FA11DEE0A4A00801FEC /* PBXTargetDependency */,
-			);
-			name = DemoProjectUITests;
-			productName = DemoProjectUITests;
-			productReference = 50FF8F9F1DEE0A4A00801FEC /* DemoProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -479,22 +452,16 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = MAX;
 				TargetAttributes = {
+					50B9A9011DF500F6002E5A03 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9MKJC68VMT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50FF8F7A1DEE0A4A00801FEC;
+					};
 					50FF8F7A1DEE0A4A00801FEC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9MKJC68VMT;
 						ProvisioningStyle = Automatic;
-					};
-					50FF8F931DEE0A4A00801FEC = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9MKJC68VMT;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 50FF8F7A1DEE0A4A00801FEC;
-					};
-					50FF8F9E1DEE0A4A00801FEC = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9MKJC68VMT;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 50FF8F7A1DEE0A4A00801FEC;
 					};
 				};
 			};
@@ -512,13 +479,19 @@
 			projectRoot = "";
 			targets = (
 				50FF8F7A1DEE0A4A00801FEC /* DemoProject */,
-				50FF8F931DEE0A4A00801FEC /* DemoProjectTests */,
-				50FF8F9E1DEE0A4A00801FEC /* DemoProjectUITests */,
+				50B9A9011DF500F6002E5A03 /* DemoProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		50B9A9001DF500F6002E5A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50FF8F791DEE0A4A00801FEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,20 +501,6 @@
 				50FF8F8E1DEE0A4A00801FEC /* LaunchScreen.storyboard in Resources */,
 				50FF8F8B1DEE0A4A00801FEC /* Assets.xcassets in Resources */,
 				50FF8F891DEE0A4A00801FEC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50FF8F921DEE0A4A00801FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50FF8F9D1DEE0A4A00801FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,36 +522,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52A5EBBDD0193A8B29303F01 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProjectTests/Pods-DemoProjectTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B605B78EF2B0EFC5F693BA16 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProjectTests/Pods-DemoProjectTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CDA61C6B3137A808D5F40CD6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,21 +535,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEB14D32A762B46B6FD5AECC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F2B66099EF5C2F69059E9A67 /* [CP] Check Pods Manifest.lock */ = {
@@ -641,6 +555,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		50B9A8FE1DF500F6002E5A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B9A9051DF500F6002E5A03 /* DemoProjectTests.m in Sources */,
+				50B9A90D1DF5012C002E5A03 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50FF8F771DEE0A4A00801FEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -668,43 +591,20 @@
 				50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */,
 				50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */,
 				50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */,
+				5002D4501DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m in Sources */,
 				50FF8FD51DEE2E9500801FEC /* DDHMenuItem.m in Sources */,
 				50FF8FDB1DEE30F200801FEC /* DDHBusinessDetailViewController.m in Sources */,
 				50FF8F801DEE0A4A00801FEC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50FF8F901DEE0A4A00801FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50B9A8FB1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */,
-				50B9A8F21DF4E15C002E5A03 /* Utils.m in Sources */,
-				506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */,
-				50FF8F991DEE0A4A00801FEC /* DemoProjectTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50FF8F9B1DEE0A4A00801FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50FF8FA41DEE0A4A00801FEC /* DemoProjectUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50FF8F961DEE0A4A00801FEC /* PBXTargetDependency */ = {
+		50B9A9081DF500F6002E5A03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50FF8F7A1DEE0A4A00801FEC /* DemoProject */;
-			targetProxy = 50FF8F951DEE0A4A00801FEC /* PBXContainerItemProxy */;
-		};
-		50FF8FA11DEE0A4A00801FEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50FF8F7A1DEE0A4A00801FEC /* DemoProject */;
-			targetProxy = 50FF8FA01DEE0A4A00801FEC /* PBXContainerItemProxy */;
+			targetProxy = 50B9A9071DF500F6002E5A03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -728,6 +628,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		50B9A90A1DF500F6002E5A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DemoProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
+			};
+			name = Debug;
+		};
+		50B9A90B1DF500F6002E5A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MKJC68VMT;
+				INFOPLIST_FILE = DemoProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
+			};
+			name = Release;
+		};
 		50FF8FA61DEE0A4A00801FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -850,60 +776,18 @@
 			};
 			name = Release;
 		};
-		50FF8FAC1DEE0A4A00801FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 918023C4536704B8B52C134E /* Pods-DemoProjectTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9MKJC68VMT;
-				INFOPLIST_FILE = DemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
-			};
-			name = Debug;
-		};
-		50FF8FAD1DEE0A4A00801FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42FBA4332F99C5A559E5AA2B /* Pods-DemoProjectTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9MKJC68VMT;
-				INFOPLIST_FILE = DemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoProject.app/DemoProject";
-			};
-			name = Release;
-		};
-		50FF8FAF1DEE0A4A00801FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 9MKJC68VMT;
-				INFOPLIST_FILE = DemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = DemoProject;
-			};
-			name = Debug;
-		};
-		50FF8FB01DEE0A4A00801FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 9MKJC68VMT;
-				INFOPLIST_FILE = DemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sidex.DemoProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		50B9A9091DF500F6002E5A03 /* Build configuration list for PBXNativeTarget "DemoProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B9A90A1DF500F6002E5A03 /* Debug */,
+				50B9A90B1DF500F6002E5A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50FF8F761DEE0A4A00801FEC /* Build configuration list for PBXProject "DemoProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -918,24 +802,6 @@
 			buildConfigurations = (
 				50FF8FA91DEE0A4A00801FEC /* Debug */,
 				50FF8FAA1DEE0A4A00801FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50FF8FAB1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DemoProjectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50FF8FAC1DEE0A4A00801FEC /* Debug */,
-				50FF8FAD1DEE0A4A00801FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50FF8FAE1DEE0A4A00801FEC /* Build configuration list for PBXNativeTarget "DemoProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50FF8FAF1DEE0A4A00801FEC /* Debug */,
-				50FF8FB01DEE0A4A00801FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
