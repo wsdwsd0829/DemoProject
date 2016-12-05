@@ -21,7 +21,6 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface DDHBusinessListViewController ()<DDHMapViewControllerDelegate> {
-
 }
 @end
 
@@ -33,7 +32,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[DDHApplicationWideConstants doorDashThemeColor]}];
     //setup SVProgressHUD
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultStyle: SVProgressHUDStyleDark];
     
     //setup tableView
     self.tableView.delegate = self;
@@ -110,6 +109,7 @@
 //MARK: MapViewControllerDelegate
 -(void) didSelectAddress:(DDHAddress*) address fromViewController: (UIViewController*) viewController {
     //TODO make query and feed data/handle errors;
+    
     [SVProgressHUD showWithStatus:@"Simulate Filtering"];
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC));
     dispatch_after(time, dispatch_get_main_queue(), ^{

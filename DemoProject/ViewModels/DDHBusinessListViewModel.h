@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "DDHBusinessListViewModelProtocol.h"
-#import "DDHNetworkFetcher.h"
+#import "DDHNetworkFetcherProtocol.h"
 
 @interface DDHBusinessListViewModel : NSObject<DDHBusinessListViewModelProtocol> {
-    DDHNetworkFetcher* fetcher;
+    id<DDHNetworkFetcherProtocol> fetcher;
 }
 ///get business from network
 -(void) loadBusinesses: (void(^)(NSArray*)) handler;

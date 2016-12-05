@@ -47,6 +47,7 @@ static NSString* kCenterAnnotationIdentifier = @"kCenterAnnotationIdentifier";
     self.mapView.showsUserLocation = YES;
     self.mapView.delegate = self;
 }
+
 -(void) setAnnotationPoint {
    // [centerAnnotation setCoordinate: [self.mapView convertPoint:self.mapView.center toCoordinateFromView:self.mapView]];
     /*
@@ -70,7 +71,7 @@ static NSString* kCenterAnnotationIdentifier = @"kCenterAnnotationIdentifier";
 - (IBAction)confirmClicked:(id)sender {
     address.longitude = self.mapView.centerCoordinate.longitude;
     address.latitude = self.mapView.centerCoordinate.latitude;
-    [self.delegate didSelectAddress:address fromViewController:self];
+    [self.delegate didSelectAddress: address fromViewController:self];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

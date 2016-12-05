@@ -7,9 +7,13 @@
 //
 
 #import "DDHBusiness.h"
+#import "DDHGooglePlaceNetworkFetcher.h"
+@interface DDHBusiness() {
+    NSString* googlePhotoReference;
+}
+@end
 
 @implementation DDHBusiness
-
 -(instancetype) initWithName: (NSString*) name withIdentifier:(NSString *)identifier{
     self = [super init];
     if(self) {
@@ -33,5 +37,20 @@
 }
 -(void)setDeliverTime: (int) time {
     _deliverTime = time;
+}
+
+//MARK: for google business only
+
+-(void)setGoogleReference: (NSString*)ref {
+    googlePhotoReference = ref;
+}
+
+-(NSString*) iconURL {
+    if(googlePhotoReference != nil) {
+         NSString* photoUrl = [DDHGooglePlaceNetworkFetcher photoUrlFromReference: googlePhotoReference];
+        return photoUrl;
+    } else {
+        return _iconURL;
+    }
 }
 @end

@@ -24,6 +24,7 @@
     //my solution is do not use this global and use color as constant 
     [self.window setTintColor:[DDHApplicationWideConstants doorDashThemeColor]];
     // Override point for customization after application launch.
+    //ask for location permission
     return YES;
 }
 

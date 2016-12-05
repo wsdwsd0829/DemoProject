@@ -11,6 +11,14 @@
 		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
 		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
 		506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024361DEFD534005908CF /* DetailViewModelTests.m */; };
+		50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */; };
+		50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E41DF4D232002E5A03 /* DDHPermissionManager.m */; };
+		50B9A8E91DF4D30D002E5A03 /* CLLocationManager+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E81DF4D30D002E5A03 /* CLLocationManager+Permission.m */; };
+		50B9A8EE1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8ED1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m */; };
+		50B9A8F11DF4E15C002E5A03 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F01DF4E15C002E5A03 /* Utils.m */; };
+		50B9A8F21DF4E15C002E5A03 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F01DF4E15C002E5A03 /* Utils.m */; };
+		50B9A8FA1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */; };
+		50B9A8FB1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */; };
 		50FF8F801DEE0A4A00801FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F7F1DEE0A4A00801FEC /* main.m */; };
 		50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F821DEE0A4A00801FEC /* AppDelegate.m */; };
 		50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8F851DEE0A4A00801FEC /* ViewController.m */; };
@@ -66,6 +74,19 @@
 		506024331DEFD096005908CF /* DemoProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-PrefixHeader.pch"; sourceTree = "<group>"; };
 		506024341DEFD4BD005908CF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		506024361DEFD534005908CF /* DetailViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewModelTests.m; sourceTree = "<group>"; };
+		50B9A8DF1DF4D198002E5A03 /* DDHSecrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSecrets.h; path = Helpers/DDHSecrets.h; sourceTree = "<group>"; };
+		50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSecrets.m; path = Helpers/DDHSecrets.m; sourceTree = "<group>"; };
+		50B9A8E31DF4D232002E5A03 /* DDHPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHPermissionManager.h; path = Managers/PermissionManager/DDHPermissionManager.h; sourceTree = "<group>"; };
+		50B9A8E41DF4D232002E5A03 /* DDHPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHPermissionManager.m; path = Managers/PermissionManager/DDHPermissionManager.m; sourceTree = "<group>"; };
+		50B9A8E71DF4D30D002E5A03 /* CLLocationManager+Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+Permission.h"; path = "CustomCategories/CLLocationManager+Permission.h"; sourceTree = "<group>"; };
+		50B9A8E81DF4D30D002E5A03 /* CLLocationManager+Permission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+Permission.m"; path = "CustomCategories/CLLocationManager+Permission.m"; sourceTree = "<group>"; };
+		50B9A8EB1DF4D5B2002E5A03 /* DDHNetworkFetcherProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHNetworkFetcherProtocol.h; path = Managers/NetworkManager/DDHNetworkFetcherProtocol.h; sourceTree = "<group>"; };
+		50B9A8EC1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGooglePlaceNetworkFetcher.h; path = Managers/NetworkManager/DDHGooglePlaceNetworkFetcher.h; sourceTree = "<group>"; };
+		50B9A8ED1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGooglePlaceNetworkFetcher.m; path = Managers/NetworkManager/DDHGooglePlaceNetworkFetcher.m; sourceTree = "<group>"; };
+		50B9A8EF1DF4E157002E5A03 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Helpers/Utils.h; sourceTree = "<group>"; };
+		50B9A8F01DF4E15C002E5A03 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Helpers/Utils.m; sourceTree = "<group>"; };
+		50B9A8F81DF4E9A7002E5A03 /* DDHGooglePlaceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGooglePlaceParser.h; path = Parsers/DDHGooglePlaceParser.h; sourceTree = "<group>"; };
+		50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGooglePlaceParser.m; path = Parsers/DDHGooglePlaceParser.m; sourceTree = "<group>"; };
 		50FF8F7B1DEE0A4A00801FEC /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FF8F7F1DEE0A4A00801FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50FF8F811DEE0A4A00801FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +179,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		50B9A8E21DF4D209002E5A03 /* PermissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A8E31DF4D232002E5A03 /* DDHPermissionManager.h */,
+				50B9A8E41DF4D232002E5A03 /* DDHPermissionManager.m */,
+			);
+			name = PermissionManager;
+			sourceTree = "<group>";
+		};
+		50B9A8E61DF4D2C4002E5A03 /* CustomCategories */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A8E71DF4D30D002E5A03 /* CLLocationManager+Permission.h */,
+				50B9A8E81DF4D30D002E5A03 /* CLLocationManager+Permission.m */,
+			);
+			name = CustomCategories;
+			sourceTree = "<group>";
+		};
+		50B9A8EA1DF4D590002E5A03 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A8EB1DF4D5B2002E5A03 /* DDHNetworkFetcherProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		50B9A8F31DF4E965002E5A03 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A8F81DF4E9A7002E5A03 /* DDHGooglePlaceParser.h */,
+				50B9A8F91DF4E9B0002E5A03 /* DDHGooglePlaceParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 		50FF8F721DEE0A4900801FEC = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +239,7 @@
 		50FF8F7D1DEE0A4A00801FEC /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				50B9A8E61DF4D2C4002E5A03 /* CustomCategories */,
 				50FF8FF51DEF408200801FEC /* Helpers */,
 				50FF8FCC1DEE283700801FEC /* Views */,
 				50FF8FC81DEE175000801FEC /* ViewControllers */,
@@ -228,7 +285,6 @@
 				50FF8FA31DEE0A4A00801FEC /* DemoProjectUITests.m */,
 				50FF8FA51DEE0A4A00801FEC /* Info.plist */,
 			);
-			name = DemoProjectUITests;
 			path = DemoProjectUITests;
 			sourceTree = "<group>";
 		};
@@ -248,6 +304,8 @@
 		50FF8FB81DEE0FF800801FEC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				50B9A8F31DF4E965002E5A03 /* Parsers */,
+				50B9A8E21DF4D209002E5A03 /* PermissionManager */,
 				50FF8FBA1DEE101200801FEC /* PersistenceManager */,
 				50FF8FB91DEE100200801FEC /* NetworkManager */,
 			);
@@ -257,8 +315,11 @@
 		50FF8FB91DEE100200801FEC /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				50B9A8EA1DF4D590002E5A03 /* Protocols */,
 				50FF8FBE1DEE110200801FEC /* DDHNetworkFetcher.h */,
 				50FF8FBF1DEE110200801FEC /* DDHNetworkFetcher.m */,
+				50B9A8EC1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.h */,
+				50B9A8ED1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
@@ -326,10 +387,14 @@
 		50FF8FF51DEF408200801FEC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				50B9A8EF1DF4E157002E5A03 /* Utils.h */,
+				50B9A8F01DF4E15C002E5A03 /* Utils.m */,
 				50FF8FF61DEF409500801FEC /* DDHConstants.m */,
 				50FF8FF81DEF410A00801FEC /* DDHConstants.h */,
 				506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */,
 				506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */,
+				50B9A8DF1DF4D198002E5A03 /* DDHSecrets.h */,
+				50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -581,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FF8FF71DEF409500801FEC /* DDHConstants.m in Sources */,
+				50B9A8E91DF4D30D002E5A03 /* CLLocationManager+Permission.m in Sources */,
 				50FF8FC71DEE162300801FEC /* DDHBusinessListViewModel.m in Sources */,
 				50FF8FD21DEE298700801FEC /* DDHBusinessCellViewModel.m in Sources */,
 				50FF8FE91DEE6E1600801FEC /* DDHMapViewController.m in Sources */,
@@ -588,14 +654,19 @@
 				50FF8FEF1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m in Sources */,
 				50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */,
 				50FF8FE41DEE384000801FEC /* BusinessDetailHeaderView.m in Sources */,
+				50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */,
 				50FF8FDE1DEE314100801FEC /* DDHBusinessDetailViewModel.m in Sources */,
 				50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */,
+				50B9A8FA1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */,
 				50FF8F831DEE0A4A00801FEC /* AppDelegate.m in Sources */,
+				50B9A8F11DF4E15C002E5A03 /* Utils.m in Sources */,
 				506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */,
+				50B9A8EE1DF4D5EF002E5A03 /* DDHGooglePlaceNetworkFetcher.m in Sources */,
 				50FF8FFB1DEF43DC00801FEC /* DDHTabBarController.m in Sources */,
 				50FF8FCF1DEE285600801FEC /* DDHBusinessCell.m in Sources */,
 				50FF8FF21DEF3BCE00801FEC /* DDHBusinessListFavoritesViewModel.m in Sources */,
 				50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */,
+				50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */,
 				50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */,
 				50FF8FD51DEE2E9500801FEC /* DDHMenuItem.m in Sources */,
 				50FF8FDB1DEE30F200801FEC /* DDHBusinessDetailViewController.m in Sources */,
@@ -607,6 +678,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B9A8FB1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */,
+				50B9A8F21DF4E15C002E5A03 /* Utils.m in Sources */,
 				506024371DEFD534005908CF /* DetailViewModelTests.m in Sources */,
 				50FF8F991DEE0A4A00801FEC /* DemoProjectTests.m in Sources */,
 			);

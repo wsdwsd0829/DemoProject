@@ -28,5 +28,6 @@
 
 -(void)setDeliverPrice: (float) price;
 -(void)setDeliverTime: (int) time;
-
+//this is for google place api's business which need to creat photo url from business; To protect Key, need create them at run time
+-(void)setGoogleReference: (NSString*)ref;
 @end
