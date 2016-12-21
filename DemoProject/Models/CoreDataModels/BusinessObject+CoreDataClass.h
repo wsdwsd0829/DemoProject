@@ -14,7 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BusinessObject : NSManagedObject
+@interface BusinessObject : NSManagedObject <BusinessProtocol>
+@property (nullable, nonatomic, copy, ) NSString* iconURL;
 
 @end
 

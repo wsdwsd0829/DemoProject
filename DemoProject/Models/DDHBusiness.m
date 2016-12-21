@@ -8,8 +8,8 @@
 
 #import "DDHBusiness.h"
 #import "DDHGooglePlaceNetworkFetcher.h"
-@interface DDHBusiness() {
-    NSString* googlePhotoReference;
+
+@interface DDHBusiness() <BusinessProtocol> {
 }
 @end
 
@@ -17,20 +17,20 @@
 -(instancetype) initWithName: (NSString*) name withIdentifier:(NSString *)identifier{
     self = [super init];
     if(self) {
-        _identifier = identifier;
+        _businessId = identifier;
         _name = name;
         _deliverPrice = 4.99;
         _deliverTime = 45;
         _iconURL = @"http://dispatchcity.com/wp-content/uploads/2014/12/doordash-480x237.jpg";
         _type = @"Pizza";
-        _favorite = NO;
+        _favorited = NO;
     }
     return self;
 }
 
--(BOOL) isFavorite {
-    return _favorite;
-}
+//-(BOOL) isFavorite {
+//    return _favorited;
+//}
 
 -(void)setDeliverPrice: (float) price{
     _deliverPrice = price;
@@ -42,12 +42,12 @@
 //MARK: for google business only
 
 -(void)setGoogleReference: (NSString*)ref {
-    googlePhotoReference = ref;
+    self.googlePhotoReference = ref;
 }
 
 -(NSString*) iconURL {
-    if(googlePhotoReference != nil) {
-         NSString* photoUrl = [DDHGooglePlaceNetworkFetcher photoUrlFromReference: googlePhotoReference];
+    if(self.googlePhotoReference != nil) {
+         NSString* photoUrl = [DDHGooglePlaceNetworkFetcher photoUrlFromReference: self.googlePhotoReference];
         return photoUrl;
     } else {
         return _iconURL;

@@ -10,6 +10,8 @@
 #import "BusinessObject+CoreDataClass.h"
 #import "Menu+CoreDataClass.h"
 #import "Order+CoreDataClass.h"
+
 @implementation BusinessObject
+
 
 @end

@@ -56,9 +56,10 @@
 - (IBAction)favoriteClicked:(id)sender {
     self.viewModel.favorite = !self.viewModel.favorite;
     //this is optional since favorite handled data already
-    [self.delegate favoriteClicked: self];
+    if(self.viewModel.favorite) {
+        [self.delegate favoriteClicked: self];
+    }
     [self updateUI];
-
 }
 
 @end

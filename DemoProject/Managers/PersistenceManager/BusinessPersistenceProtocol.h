@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol BusinessPersistenceManager <NSObject>
--(void) fetchFavoritedBusinesses: void(^)(id<BusinessProtocol>) handler;
+@protocol BusinessPersistenceProtocol<NSObject>
+-(void) fetchFavoritedBusinesses: (void(^)(NSArray<id<BusinessProtocol>>*)) handler;
+
 -(void) save;
 @end

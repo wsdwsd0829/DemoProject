@@ -18,4 +18,3 @@ NSString* const kNotificationFavoriteChanged = @"NotificationFavoriteChanged";
 
 //MARK: Storyboard Identifiers
 
-

@@ -10,12 +10,13 @@
 #import "DDHBusinessListViewModelProtocol.h"
 
 @interface DDHBusinessListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
-    id<DDHBusinessListViewModelProtocol> viewModel;
     NSArray* businesses;
     NSArray* filteredBusinesses;
+    DDHAddress* searchAddress;
     UISearchController* searchController;
 }
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property  (nonatomic) id<DDHBusinessListViewModelProtocol> viewModel;
 
+-(void) configCell: (UITableViewCell*) cell forIndexPath:(NSIndexPath*) indexPath;
 @end

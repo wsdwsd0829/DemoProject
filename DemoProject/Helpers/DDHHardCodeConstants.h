@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DDHHardCodeConstants : NSObject
+//MARK: Trending
++(NSArray<NSString*>*) trendingTopics;
 
 @end

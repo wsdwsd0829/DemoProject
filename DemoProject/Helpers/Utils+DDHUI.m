@@ -7,7 +7,9 @@
 //
 
 #import "Utils+DDHUI.h"
-
+#import <UIKit/UIKit.h>
 @implementation Utils (DDHUI)
-
+    +(id) viewControllerWithIdentifier: (NSString*) identifier fromStoryBoardNamed: (NSString*) storyboardName {
+       return [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:identifier];
+    }
 @end

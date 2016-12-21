@@ -34,8 +34,8 @@ static NSString* kMenuItemCellIdentifier = @"MenuItemCellIdentifier";
 
 -(void)businessFavoriteChanged: (NSNotification *) notification{
     if([notification.name isEqualToString:kNotificationFavoriteChanged]){
-        DDHBusiness * bus = notification.userInfo[@"business"];
-        [self.viewModel businessFavoriteChangedFor: (DDHBusiness*) bus];
+        id<BusinessProtocol> bus = notification.userInfo[@"business"];
+        [self.viewModel businessFavoriteChangedFor:  bus];
         [self p_updateHeaderUI];
     }
 }

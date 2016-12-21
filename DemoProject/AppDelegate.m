@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DDHPersistenceManager.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +24,9 @@
     //this for simplicity;  //BUG: mapview not blue dot any more
     //my solution is do not use this global and use color as constant 
     [self.window setTintColor:[DDHApplicationWideConstants doorDashThemeColor]];
-    // Override point for customization after application launch.
-    //ask for location permission
+    [[DDHPersistenceManager defaultManager] setupStack];
+    NSLog(@"%@", [[DDHPersistenceManager defaultManager] mainContext]);
+    [MagicalRecord setupCoreDataStack];
     return YES;
 }
 

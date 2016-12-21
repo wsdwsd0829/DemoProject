@@ -21,7 +21,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [viewModel loadBusinesses:^(NSArray *buses) {
+    [self.viewModel loadBusinesses:^(NSArray *buses) {
         //things used in subclass need to declared in .h
         businesses = buses;
         [self.tableView reloadData];
@@ -29,7 +29,7 @@
 }
 
 -(void)p_setupViewModel {
-    viewModel = [DDHBusinessListFavoritesViewModel new];
+    self.viewModel = [DDHBusinessListFavoritesViewModel new];
 }
 
 

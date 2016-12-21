@@ -10,4 +10,7 @@
 
 @interface NSManagedObjectContext (DDHMagicalRecordSetting)
 
++ (void) MR_setDefaultContext:(NSManagedObjectContext *)moc;
++ (void) MR_setRootSavingContext:(NSManagedObjectContext *)context;
+
 @end

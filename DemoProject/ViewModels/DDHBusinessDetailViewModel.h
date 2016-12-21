@@ -12,10 +12,10 @@
 @interface DDHBusinessDetailViewModel : NSObject
 
 @property (nonatomic) BOOL favorite;
-- (instancetype)initWithBusiness: (DDHBusiness*) business;
+- (instancetype)initWithBusiness: (id<BusinessProtocol>) business;
 -(NSString*) deliverPriceAndTime;
 -(NSArray<NSString*>*) menuItemNames;
 -(NSString*) favoriteButtonTitle;
 -(NSString*) iconURL;
--(void) businessFavoriteChangedFor: (DDHBusiness*) bus;
+-(void) businessFavoriteChangedFor: (id<BusinessProtocol>) bus;
 @end

@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		5002D4501DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */; };
 		5002D4531DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */; };
+		501695771E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 501695761E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.m */; };
+		501695841E070FDF00DB4462 /* BusinessPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 501695831E070FDF00DB4462 /* BusinessPersistenceManager.m */; };
+		501695871E07333800DB4462 /* DDHHardCodeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 501695861E07333800DB4462 /* DDHHardCodeConstants.m */; };
+		5016958B1E07500600DB4462 /* DDHBusinessSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5016958A1E07500600DB4462 /* DDHBusinessSearchViewController.m */; };
+		5016958E1E07514F00DB4462 /* DDHTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5016958D1E07514F00DB4462 /* DDHTypeCell.m */; };
+		505E4A831E05FDCD002DF8C9 /* Utils+DDHUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 505E4A821E05FDCD002DF8C9 /* Utils+DDHUI.m */; };
+		505E4A8B1E060B53002DF8C9 /* DemoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 505E4A891E060B52002DF8C9 /* DemoModel.xcdatamodeld */; };
+		505E4A8E1E061CBE002DF8C9 /* DDHPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505E4A8D1E061CBE002DF8C9 /* DDHPersistenceManager.m */; };
 		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
 		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
 		50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */; };
@@ -43,6 +51,7 @@
 		50FF8FF71DEF409500801FEC /* DDHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FF61DEF409500801FEC /* DDHConstants.m */; };
 		50FF8FFB1DEF43DC00801FEC /* DDHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FF8FFA1DEF43DC00801FEC /* DDHTabBarController.m */; };
 		897109C3770A19011BDBA880 /* Pods_DemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A6ED68307EDE413338F01A /* Pods_DemoProject.framework */; };
+		FA92FC4FF2B0835BF211299F /* Pods_DemoProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0983A140A415E87B721FA4 /* Pods_DemoProjectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +73,23 @@
 		5002D44F1DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHNetworkFetcherFactory.m; path = Managers/NetworkManager/DDHNetworkFetcherFactory.m; sourceTree = "<group>"; };
 		5002D4511DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DDHBusinessListViewController+LocalSearch.h"; path = "ViewControllers/DDHBusinessListViewController+LocalSearch.h"; sourceTree = "<group>"; };
 		5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DDHBusinessListViewController+LocalSearch.m"; path = "ViewControllers/DDHBusinessListViewController+LocalSearch.m"; sourceTree = "<group>"; };
+		501695641E064B4D00DB4462 /* BusinessProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessProtocol.h; path = Models/BusinessProtocol.h; sourceTree = "<group>"; };
+		501695751E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+DDHMagicalRecordSetting.h"; path = "Helpers/NSManagedObjectContext+DDHMagicalRecordSetting.h"; sourceTree = "<group>"; };
+		501695761E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+DDHMagicalRecordSetting.m"; path = "Helpers/NSManagedObjectContext+DDHMagicalRecordSetting.m"; sourceTree = "<group>"; };
+		5016957E1E070D2E00DB4462 /* BusinessPersistenceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessPersistenceProtocol.h; path = Managers/PersistenceManager/BusinessPersistenceProtocol.h; sourceTree = "<group>"; };
+		501695821E070FDF00DB4462 /* BusinessPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessPersistenceManager.h; path = Managers/PersistenceManager/BusinessPersistenceManager.h; sourceTree = "<group>"; };
+		501695831E070FDF00DB4462 /* BusinessPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessPersistenceManager.m; path = Managers/PersistenceManager/BusinessPersistenceManager.m; sourceTree = "<group>"; };
+		501695851E07333800DB4462 /* DDHHardCodeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHHardCodeConstants.h; path = Helpers/DDHHardCodeConstants.h; sourceTree = "<group>"; };
+		501695861E07333800DB4462 /* DDHHardCodeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHHardCodeConstants.m; path = Helpers/DDHHardCodeConstants.m; sourceTree = "<group>"; };
+		501695891E07500600DB4462 /* DDHBusinessSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHBusinessSearchViewController.h; path = ViewControllers/DDHBusinessSearchViewController.h; sourceTree = "<group>"; };
+		5016958A1E07500600DB4462 /* DDHBusinessSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHBusinessSearchViewController.m; path = ViewControllers/DDHBusinessSearchViewController.m; sourceTree = "<group>"; };
+		5016958C1E07514F00DB4462 /* DDHTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHTypeCell.h; path = Views/DDHTypeCell.h; sourceTree = "<group>"; };
+		5016958D1E07514F00DB4462 /* DDHTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHTypeCell.m; path = Views/DDHTypeCell.m; sourceTree = "<group>"; };
+		505E4A811E05FDCC002DF8C9 /* Utils+DDHUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Utils+DDHUI.h"; path = "Helpers/Utils+DDHUI.h"; sourceTree = "<group>"; };
+		505E4A821E05FDCD002DF8C9 /* Utils+DDHUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Utils+DDHUI.m"; path = "Helpers/Utils+DDHUI.m"; sourceTree = "<group>"; };
+		505E4A8A1E060B52002DF8C9 /* DemoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoModel.xcdatamodel; sourceTree = "<group>"; };
+		505E4A8C1E061CBE002DF8C9 /* DDHPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHPersistenceManager.h; path = Managers/PersistenceManager/DDHPersistenceManager.h; sourceTree = "<group>"; };
+		505E4A8D1E061CBE002DF8C9 /* DDHPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHPersistenceManager.m; path = Managers/PersistenceManager/DDHPersistenceManager.m; sourceTree = "<group>"; };
 		506024301DEFCF81005908CF /* DDHApplicationWideConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHApplicationWideConstants.h; path = Helpers/DDHApplicationWideConstants.h; sourceTree = "<group>"; };
 		506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHApplicationWideConstants.m; path = Helpers/DDHApplicationWideConstants.m; sourceTree = "<group>"; };
 		506024331DEFD096005908CF /* DemoProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -141,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA92FC4FF2B0835BF211299F /* Pods_DemoProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +202,39 @@
 				5002D4521DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m */,
 			);
 			name = ListBusinessVC;
+			sourceTree = "<group>";
+		};
+		501695631E064B2600DB4462 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				501695641E064B4D00DB4462 /* BusinessProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		5016957F1E070D3500DB4462 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5016957E1E070D2E00DB4462 /* BusinessPersistenceProtocol.h */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+		501695881E074FE400DB4462 /* SearchBusinessVC */ = {
+			isa = PBXGroup;
+			children = (
+				501695891E07500600DB4462 /* DDHBusinessSearchViewController.h */,
+				5016958A1E07500600DB4462 /* DDHBusinessSearchViewController.m */,
+			);
+			name = SearchBusinessVC;
+			sourceTree = "<group>";
+		};
+		505E4A841E060A98002DF8C9 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				505E4A891E060B52002DF8C9 /* DemoModel.xcdatamodeld */,
+			);
+			name = CoreDataModels;
 			sourceTree = "<group>";
 		};
 		50B9A8E21DF4D209002E5A03 /* PermissionManager */ = {
@@ -248,11 +308,11 @@
 			children = (
 				50B9A8E61DF4D2C4002E5A03 /* CustomCategories */,
 				50FF8FF51DEF408200801FEC /* Helpers */,
-				50FF8FCC1DEE283700801FEC /* Views */,
-				50FF8FC81DEE175000801FEC /* ViewControllers */,
-				50FF8FC11DEE15EB00801FEC /* ViewModels */,
 				50FF8FB81DEE0FF800801FEC /* Managers */,
 				50FF8FB11DEE0C7700801FEC /* Models */,
+				50FF8FC11DEE15EB00801FEC /* ViewModels */,
+				50FF8FCC1DEE283700801FEC /* Views */,
+				50FF8FC81DEE175000801FEC /* ViewControllers */,
 				50FF8F811DEE0A4A00801FEC /* AppDelegate.h */,
 				50FF8F821DEE0A4A00801FEC /* AppDelegate.m */,
 				50FF8F841DEE0A4A00801FEC /* ViewController.h */,
@@ -297,6 +357,8 @@
 		50FF8FB11DEE0C7700801FEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				501695631E064B2600DB4462 /* Protocols */,
+				505E4A841E060A98002DF8C9 /* CoreDataModels */,
 				50FF8FB21DEE0CAF00801FEC /* DDHBusiness.h */,
 				50FF8FB31DEE0CAF00801FEC /* DDHBusiness.m */,
 				50FF8FB51DEE0CBA00801FEC /* DDHAddress.h */,
@@ -335,6 +397,11 @@
 		50FF8FBA1DEE101200801FEC /* PersistenceManager */ = {
 			isa = PBXGroup;
 			children = (
+				5016957F1E070D3500DB4462 /* protocols */,
+				501695831E070FDF00DB4462 /* BusinessPersistenceManager.m */,
+				501695821E070FDF00DB4462 /* BusinessPersistenceManager.h */,
+				505E4A8C1E061CBE002DF8C9 /* DDHPersistenceManager.h */,
+				505E4A8D1E061CBE002DF8C9 /* DDHPersistenceManager.m */,
 			);
 			name = PersistenceManager;
 			sourceTree = "<group>";
@@ -358,6 +425,7 @@
 		50FF8FC81DEE175000801FEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				501695881E074FE400DB4462 /* SearchBusinessVC */,
 				5002D4541DF52C79009C9FE9 /* ListBusinessVC */,
 				50FF8FD91DEE30F200801FEC /* DDHBusinessDetailViewController.h */,
 				50FF8FDA1DEE30F200801FEC /* DDHBusinessDetailViewController.m */,
@@ -379,6 +447,8 @@
 				50FF8FE21DEE384000801FEC /* BusinessDetailHeaderView.h */,
 				50FF8FE31DEE384000801FEC /* BusinessDetailHeaderView.m */,
 				50FF8FE51DEE385200801FEC /* BusinessDetailHeaderView.xib */,
+				5016958C1E07514F00DB4462 /* DDHTypeCell.h */,
+				5016958D1E07514F00DB4462 /* DDHTypeCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -402,6 +472,12 @@
 				506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */,
 				50B9A8DF1DF4D198002E5A03 /* DDHSecrets.h */,
 				50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */,
+				505E4A811E05FDCC002DF8C9 /* Utils+DDHUI.h */,
+				505E4A821E05FDCD002DF8C9 /* Utils+DDHUI.m */,
+				501695751E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.h */,
+				501695761E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.m */,
+				501695851E07333800DB4462 /* DDHHardCodeConstants.h */,
+				501695861E07333800DB4462 /* DDHHardCodeConstants.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -422,9 +498,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B9A9091DF500F6002E5A03 /* Build configuration list for PBXNativeTarget "DemoProjectTests" */;
 			buildPhases = (
+				EBEAD2C2FE1CF847B6BD665A /* [CP] Check Pods Manifest.lock */,
 				50B9A8FE1DF500F6002E5A03 /* Sources */,
 				50B9A8FF1DF500F6002E5A03 /* Frameworks */,
 				50B9A9001DF500F6002E5A03 /* Resources */,
+				BD3184B872EDD60B76A91EF6 /* [CP] Embed Pods Frameworks */,
+				58FE73B817160F6802DD297D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -535,6 +614,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		58FE73B817160F6802DD297D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProjectTests/Pods-DemoProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3184B872EDD60B76A91EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProjectTests/Pods-DemoProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CDA61C6B3137A808D5F40CD6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +657,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBEAD2C2FE1CF847B6BD665A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F2B66099EF5C2F69059E9A67 /* [CP] Check Pods Manifest.lock */ = {
@@ -585,13 +709,17 @@
 				50B9A8E91DF4D30D002E5A03 /* CLLocationManager+Permission.m in Sources */,
 				50FF8FC71DEE162300801FEC /* DDHBusinessListViewModel.m in Sources */,
 				50FF8FD21DEE298700801FEC /* DDHBusinessCellViewModel.m in Sources */,
+				501695871E07333800DB4462 /* DDHHardCodeConstants.m in Sources */,
 				50FF8FE91DEE6E1600801FEC /* DDHMapViewController.m in Sources */,
 				50FF8FCB1DEE177B00801FEC /* DDHBusinessListViewController.m in Sources */,
 				50FF8FEF1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m in Sources */,
 				50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */,
+				505E4A8E1E061CBE002DF8C9 /* DDHPersistenceManager.m in Sources */,
 				50FF8FE41DEE384000801FEC /* BusinessDetailHeaderView.m in Sources */,
+				501695841E070FDF00DB4462 /* BusinessPersistenceManager.m in Sources */,
 				50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */,
 				50FF8FDE1DEE314100801FEC /* DDHBusinessDetailViewModel.m in Sources */,
+				5016958E1E07514F00DB4462 /* DDHTypeCell.m in Sources */,
 				50FF8FB41DEE0CAF00801FEC /* DDHBusiness.m in Sources */,
 				50B9A8FA1DF4E9B0002E5A03 /* DDHGooglePlaceParser.m in Sources */,
 				5002D4531DF51D9F009C9FE9 /* DDHBusinessListViewController+LocalSearch.m in Sources */,
@@ -605,10 +733,14 @@
 				50FF8FC01DEE110200801FEC /* DDHNetworkFetcher.m in Sources */,
 				50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */,
 				50FF8FB71DEE0CBA00801FEC /* DDHAddress.m in Sources */,
+				505E4A8B1E060B53002DF8C9 /* DemoModel.xcdatamodeld in Sources */,
 				5002D4501DF51B2A009C9FE9 /* DDHNetworkFetcherFactory.m in Sources */,
+				5016958B1E07500600DB4462 /* DDHBusinessSearchViewController.m in Sources */,
+				501695771E0657A300DB4462 /* NSManagedObjectContext+DDHMagicalRecordSetting.m in Sources */,
 				50FF8FD51DEE2E9500801FEC /* DDHMenuItem.m in Sources */,
 				50FF8FDB1DEE30F200801FEC /* DDHBusinessDetailViewController.m in Sources */,
 				50FF8F801DEE0A4A00801FEC /* main.m in Sources */,
+				505E4A831E05FDCD002DF8C9 /* Utils+DDHUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +776,7 @@
 /* Begin XCBuildConfiguration section */
 		50B9A90A1DF500F6002E5A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918023C4536704B8B52C134E /* Pods-DemoProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9MKJC68VMT;
@@ -657,6 +790,7 @@
 		};
 		50B9A90B1DF500F6002E5A03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FBA4332F99C5A559E5AA2B /* Pods-DemoProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9MKJC68VMT;
@@ -821,6 +955,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		505E4A891E060B52002DF8C9 /* DemoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				505E4A8A1E060B52002DF8C9 /* DemoModel.xcdatamodel */,
+			);
+			currentVersion = 505E4A8A1E060B52002DF8C9 /* DemoModel.xcdatamodel */;
+			name = DemoModel.xcdatamodeld;
+			path = CoreData/DemoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 50FF8F731DEE0A4900801FEC /* Project object */;
 }

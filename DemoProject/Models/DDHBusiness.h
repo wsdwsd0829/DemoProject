@@ -14,17 +14,18 @@
 
 -(instancetype) initWithName: (NSString*) name withIdentifier: (NSString*) identifier;
 
-@property (nonatomic, copy, readonly) NSString* identifier;
+@property (nonatomic, copy, readonly) NSString* businessId;
 @property (nonatomic, copy, readonly) NSString* name;
 @property (nonatomic, copy, readonly) NSString* type;
 
 @property (nonatomic, copy) NSString* iconURL;
 @property (nonatomic, assign, readonly) float deliverPrice;
 @property (nonatomic, assign, readonly) int deliverTime; //int in min
-@property (nonatomic, getter=isFavorite) BOOL favorite;
+@property (nonatomic) BOOL favorited; //, getter=isFavorite
 
 @property (nonatomic, strong) DDHAddress* address;
 @property (nonatomic, strong) NSArray<DDHMenuItem*>* menuItems;
+@property (nonatomic, copy) NSString* googlePhotoReference;
 
 -(void)setDeliverPrice: (float) price;
 -(void)setDeliverTime: (int) time;

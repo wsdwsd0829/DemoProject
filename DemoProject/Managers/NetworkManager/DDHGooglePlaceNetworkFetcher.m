@@ -98,12 +98,11 @@ static NSString* searchFormat = @"json";
 +(NSString*) photoUrlFromReference: (NSString* )ref {
     return [NSString stringWithFormat:@"%@/%@?maxwidth=%@&photoreference=%@&key=%@", kGooglePlaceSearchHostName, [DDHGooglePlaceNetworkFetcher p_searchApi:Photo], @400, ref, kGooglePlaceApiKey];
 }
-
--(void) fetchBusinesses: (void(^)(NSArray*)) handler {
+-(void) fetchBusinessesWithSearchText:(NSString*)text  withLocationString:(NSString*)locationStr  withHandler:(void(^)(NSArray*)) handler {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSDictionary* parameters = @{@"key": kGooglePlaceApiKey, @"location": @"48.859294,2.347589", @"radius":@"50000", @"keywaord": @"cafe"};
+    NSDictionary* parameters = @{@"key": kGooglePlaceApiKey, @"location": locationStr, @"radius":@"50000", @"keyword": text};
     NSURL *URL = [NSURL URLWithString:[self p_searchNearbyUrlWithParameters: parameters]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
@@ -112,12 +111,16 @@ static NSString* searchFormat = @"json";
         if (error) {
             NSLog(@"Error: %@", error);
         } else {
-            NSLog(@"%@ %@", response, responseObject);
+            //NSLog(@"%@ %@", response, responseObject);
             //parse array
             handler([DDHGooglePlaceParser parse:responseObject]);
         }
     }];
     [dataTask resume];
+}
+
+-(void) fetchBusinesses: (void(^)(NSArray*)) handler {
+    [self fetchBusinessesWithSearchText:@"cafe" withLocationString:@"48.859294,2.347589" withHandler: handler];
 }
 
 -(NSString*)p_searchNearbyUrlWithParameters: (NSDictionary<NSString*, NSString* >*) params {

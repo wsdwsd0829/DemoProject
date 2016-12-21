@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DDHBusiness.h"
 
 @interface DDHGooglePlaceParser : NSObject
 
-+(NSArray<DDHBusiness*>*) parse: (id) responseObject;
++(NSArray<id<BusinessProtocol>>*) parse: (id) responseObject;
 
 @end

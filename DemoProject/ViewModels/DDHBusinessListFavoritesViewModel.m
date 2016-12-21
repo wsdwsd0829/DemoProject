@@ -7,12 +7,28 @@
 //
 
 #import "DDHBusinessListFavoritesViewModel.h"
+#import "BusinessPersistenceManager.h"
+@implementation DDHBusinessListFavoritesViewModel {
+    BusinessPersistenceManager* busPersistManager;
+}
 
-@implementation DDHBusinessListFavoritesViewModel
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        busPersistManager = [BusinessPersistenceManager new];
+    }
+    return self;
+}
 
 -(void) loadBusinesses: (void(^)(NSArray*)) handler {
-    //TODO: fetch network handle in backend. 
+    //TODO: fetch network handle in backend.
+    /*
     [fetcher fetchFavoriteBusinesses:^(NSArray * buses) {
+        handler(buses);
+    }];
+     */
+    [busPersistManager fetchFavoritedBusinesses:^(NSArray<id<BusinessProtocol>> * buses) {
         handler(buses);
     }];
 }

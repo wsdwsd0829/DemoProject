@@ -9,5 +9,4 @@
 #import "DDHBusinessListViewController.h"
 
 @interface DDHBusinessListViewController (LocalSearch)<UISearchResultsUpdating, UISearchBarDelegate>
-
 @end

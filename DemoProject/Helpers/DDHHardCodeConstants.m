@@ -9,5 +9,7 @@
 #import "DDHHardCodeConstants.h"
 
 @implementation DDHHardCodeConstants
-
++(NSArray<NSString*>*) trendingTopics {
+    return @[@"Sushi", @"Indian", @"Pizza", @"Chinese", @"Thai", @"Mexican", @"Italian", @"Breakfast", @"Bbq"];
+}
 @end

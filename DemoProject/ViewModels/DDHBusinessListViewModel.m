@@ -34,5 +34,11 @@
         handler(results);
     }];
 }
+//@"48.859294,2.347589"
+-(void) loadBusinessesWithSearchText:(NSString*) text withLocationString:(NSString*)locationStr withHandler: (void(^)(NSArray*)) handler {
+    [fetcher fetchBusinessesWithSearchText:text withLocationString:locationStr  withHandler:^(NSArray * results) {
+        handler(results);
+    }];
+}
 
 @end

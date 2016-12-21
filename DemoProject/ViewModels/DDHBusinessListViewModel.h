@@ -12,8 +12,13 @@
 
 @interface DDHBusinessListViewModel : NSObject<DDHBusinessListViewModelProtocol> {
     id<DDHNetworkFetcherProtocol> fetcher;
+    //id<Bus> persistManager;
 }
+@property (nonatomic, copy) NSString* searchTopic;
+@property (nonatomic) DDHAddress* searchAddress;
 ///get business from network
+-(void) loadBusinessesWithSearchText:(NSString*) text withLocationStr:(NSString*)locationStr withHandler: (void(^)(NSArray*)) handler;
+
 -(void) loadBusinesses: (void(^)(NSArray*)) handler;
 
 @end

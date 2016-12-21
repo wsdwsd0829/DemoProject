@@ -7,22 +7,30 @@
 //
 
 #import "DDHGooglePlaceParser.h"
-
+#import "DDHGooglePlaceNetworkFetcher.h"
 @implementation DDHGooglePlaceParser
 
-+(NSArray<DDHBusiness*>*) parse: (id) responseObject {
++(NSArray<id<BusinessProtocol>>*) parse: (id) responseObject {
     NSMutableArray* busResults = [NSMutableArray new];
     NSDictionary* dict = (NSDictionary*)responseObject;
     NSDictionary* results = (NSDictionary*)dict[@"results"];
     if(results != nil) {
         for(NSDictionary<NSString*, id>* result in results){
-            DDHBusiness* bus = [[DDHBusiness alloc] initWithName:result[@"name"] withIdentifier: result[@"id"]];
+            id<BusinessProtocol>  bus = [BusinessObject MR_createEntity];
+            //[NSEntityDescription insertNewObjectForEntityForName:@"Business" inManagedObjectContext: [[DDHPersistenceManager defaultManager] mainContext]];
+            
+            bus.name = result[@"name"];
+            bus.businessId = result[@"id"];
+            
             NSArray* photos = (NSArray*)(result[@"photos"]);
             if(photos.count > 0) {
-                [bus setGoogleReference: ((NSDictionary*)photos[0])[@"photo_reference"]];
+               bus.googlePhotoReference = ((NSDictionary*)photos[0])[@"photo_reference"];
+                bus.iconURL = [DDHGooglePlaceNetworkFetcher photoUrlFromReference: bus.googlePhotoReference];
             }
             [busResults addObject: bus];
         }
+        //TODO: remove duplicate
+        //[[DDHPersistenceManager defaultManager] saveMainContext];
     }
     return busResults;
 }

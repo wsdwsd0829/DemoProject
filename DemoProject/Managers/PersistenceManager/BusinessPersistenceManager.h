@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface BusinessPersistenceManager : NSObject
+#import "BusinessPersistenceProtocol.h"
+@interface BusinessPersistenceManager : NSObject <BusinessPersistenceProtocol>
 
 @end

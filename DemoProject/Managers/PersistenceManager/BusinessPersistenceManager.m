@@ -9,5 +9,15 @@
 #import "BusinessPersistenceManager.h"
 
 @implementation BusinessPersistenceManager
+-(void) fetchFavoritedBusinesses: (void(^)(NSArray<id<BusinessProtocol>>*)) handler {
+    NSFetchRequest* fr = [BusinessObject fetchRequest];
+    fr.predicate = [NSPredicate predicateWithFormat:@"favorited = %@", @YES];
+    NSArray<id<BusinessProtocol>>* results =  [[[DDHPersistenceManager defaultManager] parentContext] executeFetchRequest: fr error:nil];
+    
+    handler(results);
+}
 
+-(void) save {
+    
+}
 @end

@@ -52,8 +52,8 @@
             }
             //TODO use persistence method
             NSSet* busSet = [NSSet setWithArray: [[NSUserDefaults standardUserDefaults] arrayForKey:kUserDefaultsFavoriteBusiness]];
-            if([busSet containsObject:bus.identifier]) {
-                bus.favorite = YES;
+            if([busSet containsObject:bus.businessId]) {
+                bus.favorited = YES;
             }
             
             [businesses addObject: bus];

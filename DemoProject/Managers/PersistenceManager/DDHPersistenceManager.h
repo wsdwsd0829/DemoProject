@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface DDHPersistenceManager : NSObject
+@interface DDHPersistenceManager : NSObject {
+    
+}
+@property (nonatomic) NSManagedObjectContext* mainContext;
+@property (nonatomic) NSManagedObjectContext* parentContext; //private writer
+    
++(instancetype) defaultManager;
+-(void) setupStack;
+-(NSManagedObjectContext*) backgroundContext;
 
+- (void)saveMainContext;
+-(void)deleteObjects: (NSArray*) objects;
 @end

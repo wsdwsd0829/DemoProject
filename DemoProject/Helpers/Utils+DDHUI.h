@@ -9,5 +9,6 @@
 #import "Utils.h"
 
 @interface Utils (DDHUI)
-
+    ///instantiate viewController with identifier and storyboard name
+    +(id) viewControllerWithIdentifier: (NSString*) identifier fromStoryBoardNamed: (NSString*) storyboardName;
 @end

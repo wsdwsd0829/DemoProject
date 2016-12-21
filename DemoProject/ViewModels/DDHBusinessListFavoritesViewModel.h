@@ -10,6 +10,6 @@
 #import "DDHBusinessListViewModelProtocol.h"
 #import "DDHBusinessListViewModel.h"
 
-@interface DDHBusinessListFavoritesViewModel: DDHBusinessListViewModel<DDHBusinessListViewModelProtocol>
+@interface DDHBusinessListFavoritesViewModel: DDHBusinessListViewModel
 
 @end
