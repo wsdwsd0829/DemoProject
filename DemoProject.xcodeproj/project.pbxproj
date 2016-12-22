@@ -19,6 +19,7 @@
 		505E4A8E1E061CBE002DF8C9 /* DDHPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505E4A8D1E061CBE002DF8C9 /* DDHPersistenceManager.m */; };
 		506024321DEFCF81005908CF /* DDHApplicationWideConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */; };
 		506024351DEFD4BD005908CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 506024341DEFD4BD005908CF /* Localizable.strings */; };
+		50A50D791E0B709700B34E9E /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A50D781E0B709700B34E9E /* ShakeViewController.m */; };
 		50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */; };
 		50B9A8E51DF4D232002E5A03 /* DDHPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E41DF4D232002E5A03 /* DDHPermissionManager.m */; };
 		50B9A8E91DF4D30D002E5A03 /* CLLocationManager+Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A8E81DF4D30D002E5A03 /* CLLocationManager+Permission.m */; };
@@ -94,6 +95,8 @@
 		506024311DEFCF81005908CF /* DDHApplicationWideConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHApplicationWideConstants.m; path = Helpers/DDHApplicationWideConstants.m; sourceTree = "<group>"; };
 		506024331DEFD096005908CF /* DemoProject-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoProject-PrefixHeader.pch"; sourceTree = "<group>"; };
 		506024341DEFD4BD005908CF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		50A50D771E0B709700B34E9E /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShakeViewController.h; path = ViewControllers/ShakeViewController.h; sourceTree = "<group>"; };
+		50A50D781E0B709700B34E9E /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShakeViewController.m; path = ViewControllers/ShakeViewController.m; sourceTree = "<group>"; };
 		50B9A8DF1DF4D198002E5A03 /* DDHSecrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSecrets.h; path = Helpers/DDHSecrets.h; sourceTree = "<group>"; };
 		50B9A8E01DF4D198002E5A03 /* DDHSecrets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSecrets.m; path = Helpers/DDHSecrets.m; sourceTree = "<group>"; };
 		50B9A8E31DF4D232002E5A03 /* DDHPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHPermissionManager.h; path = Managers/PermissionManager/DDHPermissionManager.h; sourceTree = "<group>"; };
@@ -425,6 +428,8 @@
 		50FF8FC81DEE175000801FEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				50A50D771E0B709700B34E9E /* ShakeViewController.h */,
+				50A50D781E0B709700B34E9E /* ShakeViewController.m */,
 				501695881E074FE400DB4462 /* SearchBusinessVC */,
 				5002D4541DF52C79009C9FE9 /* ListBusinessVC */,
 				50FF8FD91DEE30F200801FEC /* DDHBusinessDetailViewController.h */,
@@ -715,6 +720,7 @@
 				50FF8FEF1DEF3ACB00801FEC /* DDHBusinessListFavoritesViewController.m in Sources */,
 				50FF8F861DEE0A4A00801FEC /* ViewController.m in Sources */,
 				505E4A8E1E061CBE002DF8C9 /* DDHPersistenceManager.m in Sources */,
+				50A50D791E0B709700B34E9E /* ShakeViewController.m in Sources */,
 				50FF8FE41DEE384000801FEC /* BusinessDetailHeaderView.m in Sources */,
 				501695841E070FDF00DB4462 /* BusinessPersistenceManager.m in Sources */,
 				50B9A8E11DF4D198002E5A03 /* DDHSecrets.m in Sources */,
@@ -896,7 +902,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E028DEDD9E136C17B592EA6 /* Pods-DemoProject.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9MKJC68VMT;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -912,7 +917,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0EF2EFE197041771178C8BFE /* Pods-DemoProject.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9MKJC68VMT;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

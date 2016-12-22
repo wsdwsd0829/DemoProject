@@ -19,6 +19,7 @@
 
 #import "DDHConstants.h"
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "ShakeViewController.h"
 
 NSString* const DDHBusinessDetailViewControllerIdentifier = @"DDHBusinessDetailViewController";
 NSString* const DDHMapViewControllerIdentifier = @"DDHMapViewController";
@@ -48,6 +49,9 @@ NSString* const DDHMapViewControllerIdentifier = @"DDHMapViewController";
     //setup view model
     [self p_setupViewModel];
     [self p_setupNotifications];
+    
+    //for shaking
+    [self becomeFirstResponder];
 }
 
 -(void)p_setupViewModel {
@@ -90,6 +94,21 @@ NSString* const DDHMapViewControllerIdentifier = @"DDHMapViewController";
 
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver: self];
+}
+
+//MARK: shake handling
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if(motion == UIEventSubtypeMotionShake) {
+        ShakeViewController* svc = [Utils viewControllerWithIdentifier:@"ShakeViewController" fromStoryBoardNamed:@"Main"];
+        //must set before present otherwise too late
+        svc.view.backgroundColor = [UIColor clearColor];
+        [self presentViewController:svc animated:YES completion:^{
+        }];
+    }
 }
 
 //MARK: Keyboard handling

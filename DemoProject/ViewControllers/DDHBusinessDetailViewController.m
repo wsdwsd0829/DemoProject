@@ -64,6 +64,7 @@ static NSString* kMenuItemCellIdentifier = @"MenuItemCellIdentifier";
 -(void) p_updateHeaderUI {
     if([self.tableView.tableHeaderView isKindOfClass: [BusinessDetailHeaderView class]]) {
         BusinessDetailHeaderView* header = (BusinessDetailHeaderView*)(self.tableView.tableHeaderView);
+        self.tableView.tableHeaderView = header;
          [header updateUI];
     }
 }
